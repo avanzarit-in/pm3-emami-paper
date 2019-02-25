@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import {  Menu, Dropdown, Icon } from 'semantic-ui-react'
 import "./App.css"
-import DataGrid from './components/data-grid/DataGrid'
+import ReelManagement from './components/reel-management/ReelManagement'
+import ParentReelManagement from './components/parent-reel-management/ParentReelManagement'
 
 const trigger = (userName) => (
     <span>
@@ -21,7 +22,9 @@ this.setState({activeItem:name})
       <div>
         <Menu size="large" inverted pointing   >
 
-           <Menu.Item name='Parent Reel Master' active={activeItem === 'prm'} onClick={()=>this.handleItemClick('prm')} />
+           <Menu.Item name='Parent Reel Master' 
+           active={activeItem === 'prm'} 
+           onClick={()=>this.handleItemClick('prm')} />
           <Menu.Item
             name='Reel Production'
             active={activeItem === 'rp'}
@@ -36,6 +39,11 @@ this.setState({activeItem:name})
             name='Reports'
             active={activeItem === 'report'}
              onClick={()=>this.handleItemClick('report')}
+          />
+          <Menu.Item
+            name='Admin'
+            active={activeItem === 'admin'}
+             onClick={()=>this.handleItemClick('admin')}
           />
 
 
@@ -59,7 +67,12 @@ this.setState({activeItem:name})
             </Menu.Item>
           </Menu.Menu>
         </Menu>
-        <DataGrid />
+        {this.state.activeItem==="prm"?
+        <ParentReelManagement/>:this.state.activeItem==="rp"?
+        <ReelManagement  />:this.state.activeItem==="ps"?
+        <div>PS</div>:this.state.activeItem==="report"?
+        <div>REPORT</div>:this.state.activeItem==="admin"?
+        <div>ADMIN</div>:null}
       </div>
     );
   }

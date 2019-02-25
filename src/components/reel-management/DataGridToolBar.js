@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Calendar from './../calendar/Calendar'
+import Calendar from '../calendar/Calendar'
 import moment from 'moment';
 import { Modal,Button,Icon } from 'semantic-ui-react';
 export default class DataGridToolBar extends Component {
