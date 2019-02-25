@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import {  Menu, Dropdown, Icon } from 'semantic-ui-react'
+import { Transition, Image, Menu, Sidebar, Segment, Dropdown, Icon, Popup, Breadcrumb, Accordion, Grid } from 'semantic-ui-react'
+import "tabler-react/dist/Tabler.css";
 import "./App.css"
 import DataGrid from './components/data-grid/DataGrid'
-
+import Dashboard1 from './components/dashboard/Dashboard1'
 const trigger = (userName) => (
     <span>
         <Icon name='user' /> Hello, {userName}
@@ -31,11 +32,6 @@ this.setState({activeItem:name})
             name='Packaging Slip'
             active={activeItem === 'ps'}
              onClick={()=>this.handleItemClick('ps')}
-          />
-          <Menu.Item
-            name='Reports'
-            active={activeItem === 'report'}
-             onClick={()=>this.handleItemClick('report')}
           />
 
 
