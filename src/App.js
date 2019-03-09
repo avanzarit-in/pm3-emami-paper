@@ -3,6 +3,7 @@ import {  Menu, Dropdown, Icon } from 'semantic-ui-react'
 import "./App.css"
 import ReelManagement from './components/reel-management/ReelManagement'
 import ParentReelManagement from './components/parent-reel-management/ParentReelManagement'
+import { SemanticToastContainer } from 'react-semantic-toasts';
 
 const trigger = (userName) => (
     <span>
@@ -11,7 +12,7 @@ const trigger = (userName) => (
 )
 
 class App extends Component {
-state = { activeItem:'prm'}
+state = { activeItem:'rp'}
 
 handleItemClick = (name) =>{
 this.setState({activeItem:name})
@@ -19,7 +20,9 @@ this.setState({activeItem:name})
   render() {
     let {activeItem} = this.state;
     return (
+     
       <div>
+         
         <Menu size="large" inverted pointing   >
 
            <Menu.Item name='Parent Reel Master' 
@@ -67,12 +70,14 @@ this.setState({activeItem:name})
             </Menu.Item>
           </Menu.Menu>
         </Menu>
+      
         {this.state.activeItem==="prm"?
         <ParentReelManagement/>:this.state.activeItem==="rp"?
         <ReelManagement  />:this.state.activeItem==="ps"?
         <div>PS</div>:this.state.activeItem==="report"?
         <div>REPORT</div>:this.state.activeItem==="admin"?
         <div>ADMIN</div>:null}
+           <SemanticToastContainer position="bottom-right" />
       </div>
     );
   }
