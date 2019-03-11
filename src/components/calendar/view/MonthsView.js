@@ -1,6 +1,6 @@
 import React from "react"
 import { Label, Grid } from 'semantic-ui-react'
-import Utils from './../../../utils/Utils'
+import Utils from './../../utils/Utils'
 import moment from 'moment'
 
 const MonthsView = (props) => {

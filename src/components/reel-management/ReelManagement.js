@@ -23,12 +23,12 @@ const columns = [
     { key: "SLN", title: "SLN", mandatory: false,readOnly:true },
     { key: "REELNO", title: "REEL NO", mandatory: true  },
     { key: "ITEMCODE", title: "ITEM CODE", mandatory: true },
-    { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle:'\u00A0' },
-    { key: "JNT", title: "JNT", mandatory: true,groupTitle:"REEL/REAM" },
-    { key: "BUNDLE", title: "BUNDLE", mandatory: true,groupTitle:'\u00A0' },
+    { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle: ()=>{return(<div className="grouped-column" >&nbsp;</div>)} },
+    { key: "JNT", title: "JNT", mandatory: true,groupTitle:()=>{return(<div className="grouped-column" >REEL/REAM</div>)} },
+    { key: "BUNDLE", title: "BUNDLE", mandatory: true,groupTitle:()=>{return(<div className="grouped-column" >&nbsp;</div>)} },
     { key: "SFT", title: "SFT", mandatory: true },
     { key: "QLYMRK", title: "QLY MRK", mandatory: true },
-    { key: "PARENTRELNO", title: "PARENT", mandatory: true },
+    { key: "PARENTRELNO", title: "PARENT", mandatory: true},
     { key: "WEIGHTDATE", title: "WEIGHTMENT", mandatory: true },
     { key: "LENGTH", title: "LENGTH", mandatory: true }
 ];
@@ -73,8 +73,10 @@ class ReelManagement extends Component {
 
     render() {
         return (
-            !this.state.isLoading ? <
-                DataGrid headerRowHeight={50} columns={columns} createNewRowHandler={this.createNewRow} rows={this.state.rows} saveHook={(item) => this.saveHook(item)} /> :
+            !this.state.isLoading ? 
+            <DataGrid headerRowHeight={50} minHeight={477} columns={columns} createNewRowHandler={this.createNewRow} rows={this.state.rows} saveHook={(item) => this.saveHook(item)} >
+            <DataGridToolBar/>
+            </DataGrid> :
                 <Dimmer active inverted style={{ position: 'fixed', top: "50%" }}>
                     <Loader size='large'>Loading</Loader>
                 </Dimmer>

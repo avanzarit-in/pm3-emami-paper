@@ -3,17 +3,17 @@ import { Grid } from 'semantic-ui-react'
 import WeekDayItem from './WeekDayItem'
 import DateItem from './DateItem'
 import moment from 'moment'
-import Utils from './../../../../utils/Utils'
+import Utils from '../../../utils/Utils'
 
-const CalendarView = (props) => {
+const CompositCalendarView = (props) => {
     let defaultWeekDayColor = "red";
     let defaultWeekDaySize = "small";
     let today = moment();
 
     let dateValues = Utils.generateCalendarData(props.date.toDate());
     //  console.log("CalanderView component : render called");
-
-    return ( 
+    console.log('here');
+    return (
 
         <Grid columns={16} centered  >
             <Grid.Row style={{ paddingBottom: '0px' }}>
@@ -54,11 +54,11 @@ const CalendarView = (props) => {
                                         } else if (thisDay.isBefore(otherDate, 'date')) {
                                             color = "grey";
                                             disabled = true;
-                                        }else if (thisDay.isAfter(referenceDate, 'date')) {
+                                        } else if (thisDay.isAfter(referenceDate, 'date')) {
                                             color = "black";
                                             disabled = false;
-                                        }else if(thisDay.isSame(referenceDate,'date')||thisDay.isSame(otherDate,'date')){
-                                            color="blue";
+                                        } else if (thisDay.isSame(referenceDate, 'date') || thisDay.isSame(otherDate, 'date')) {
+                                            color = "blue";
                                             disabled = true;
                                         }
                                     } else if (type === "from-date-calendar") {
@@ -71,8 +71,8 @@ const CalendarView = (props) => {
                                         } else if (thisDay.isBefore(referenceDate, 'date')) {
                                             color = "black";
                                             disabled = false;
-                                        }else if(thisDay.isSame(referenceDate,'date')||thisDay.isSame(otherDate,'date')){
-                                            color="blue";
+                                        } else if (thisDay.isSame(referenceDate, 'date') || thisDay.isSame(otherDate, 'date')) {
+                                            color = "blue";
                                             disabled = true;
                                         }
                                     }
@@ -97,4 +97,4 @@ const CalendarView = (props) => {
     )
 }
 
-export default CalendarView;
+export default CompositCalendarView;

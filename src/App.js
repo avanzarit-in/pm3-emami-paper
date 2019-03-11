@@ -3,6 +3,7 @@ import {  Menu, Dropdown, Icon } from 'semantic-ui-react'
 import "./App.css"
 import ReelManagement from './components/reel-management/ReelManagement'
 import ParentReelManagement from './components/parent-reel-management/ParentReelManagement'
+import PackageManagement from './components/package-management/PackageManagement'
 import { SemanticToastContainer } from 'react-semantic-toasts';
 
 const trigger = (userName) => (
@@ -74,7 +75,7 @@ this.setState({activeItem:name})
         {this.state.activeItem==="prm"?
         <ParentReelManagement/>:this.state.activeItem==="rp"?
         <ReelManagement  />:this.state.activeItem==="ps"?
-        <div>PS</div>:this.state.activeItem==="report"?
+        <PackageManagement/>:this.state.activeItem==="report"?
         <div>REPORT</div>:this.state.activeItem==="admin"?
         <div>ADMIN</div>:null}
            <SemanticToastContainer position="bottom-right" />

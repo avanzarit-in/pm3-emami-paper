@@ -88,7 +88,7 @@ export default class DataGrid extends Component {
             if(column.readOnly!==undefined && column.readOnly){
                 notEditableColumns.push(index);
             }
-            return { key: column.key, editable: (data) => this.isEditable(data), headerRenderer: () => <div className="header-wrapper">{column.groupTitle!==undefined?<div className="grouped-column" >{column.groupTitle}</div>:null}{column.title}{column.mandatory ? <span style={{ color: 'red' }}>*</span> : ""}</div> }
+            return { key: column.key, editable: (data) => this.isEditable(data), headerRenderer: () => <div className="header-wrapper">{column.groupTitle!==undefined?column.groupTitle():null}{column.title}{column.mandatory ? <span style={{ color: 'red' }}>*</span> : ""}</div> }
         });
 
         if (this.props.rows.length === 0) {
@@ -216,7 +216,7 @@ export default class DataGrid extends Component {
                 cellNavigationMode={this.state.cellNavigationMode}
                 onCellSelected={this.selectedCell}
                 //This had to be explicitly set to a value >=400 as without this the table grid render method was called infinitly
-                minHeight={470}
+                minHeight={this.props.minHeight}
                 //This is done to scroll the table to the last row once a row is added 
                 scrollToRowIndex={this.state.totalRows - 1}
                 headerRowHeight={this.props.headerRowHeight}

@@ -39,3 +39,7 @@
 .grouped-column {background-color:#A9A9A9;color:white; text-align:center}
 
 .header-wrapper {text-align:center }
+
+.react-grid-Container{
+  overflow: auto;
+}

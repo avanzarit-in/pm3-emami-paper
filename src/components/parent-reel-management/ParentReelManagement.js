@@ -4,7 +4,7 @@ import withDataServices from './../hoc/withDataServices';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
 const columns = [
-    { key: "LOTNO", title: "LOT NO", mandatory: false },
+    { key: "LOTNO", title: "LOT NO", mandatory: false,readOnly:true },
     { key: "PARENTRLNO", title: "PARENT REEL NO", mandatory: true },
     { key: "MFGDATE", title: "REEL MFG DATE", mandatory: true },
     { key: "WEIGHT", title: "PARENT ROLL WT", mandatory: true }
@@ -49,7 +49,7 @@ class ParentReelManagement extends Component {
     render() {
         return (
             !this.state.isLoading ? <
-                DataGrid columns={columns} createNewRowHandler={this.createNewRow} rows={this.state.rows} saveHook={(item) => this.saveHook(item)} /> :
+                DataGrid columns={columns} minHeight={467} createNewRowHandler={this.createNewRow} rows={this.state.rows} saveHook={(item) => this.saveHook(item)} /> :
                 <Dimmer active inverted style={{ position: 'fixed', top: "50%" }}>
                     <Loader size='large'>Loading</Loader>
                 </Dimmer>

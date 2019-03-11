@@ -1,31 +1,22 @@
 import React, { Component } from 'react'
 import { Grid, Button, Icon } from 'semantic-ui-react'
-import CompositCalendarView from '../view/calendarView/CompositCalendarView'
+import CalendarView from './../view/calendarView/CalendarView'
 import MonthsView from './../view/MonthsView'
 import YearView from './../view/YearView'
 import moment from 'moment'
 import Utils from './../../utils/Utils'
 
-export default class AbsoluteCalendarBody extends Component {
+export default class MonthCalendar extends Component {
     state =
         {
             mode: 'calendar',
-            internalStateChange: false,
             date: moment(),
         };
 
 
-    shouldComponentUpdate(nextProps, nextState) {
-        if (nextProps.hasErrors) {
-            return false;
-        }
-        return true;
-    }
-
     setDate = (e, date) => {
-        console.log("date String =>" + date.format("YYYY/MM/DD"));
-        this.setState({ internalStateChange: false });
-        this.props.callback(e, date);
+        
+        this.props.callback(e,date);
     }
 
     changeTitle = (event, year, month) => {
@@ -34,14 +25,14 @@ export default class AbsoluteCalendarBody extends Component {
         } else if (this.state.mode === "year") {
             this.setState({ mode: "month" });
         }
-        this.setState({ date: moment([year, month, this.state.date.get('date')]), internalStateChange: true });
+        this.setState({ date: moment([year, month, this.state.date.get('date')]) });
     }
 
     changeMode = (e, year, month) => {
         if (this.state.mode === "calendar") {
-            this.setState({ mode: "month", internalStateChange: true })
+            this.setState({ mode: "month" })
         } else if (this.state.mode === "month") {
-            this.setState({ mode: "year", internalStateChange: true })
+            this.setState({ mode: "year" })
         }
     }
 
@@ -51,7 +42,7 @@ export default class AbsoluteCalendarBody extends Component {
         } else {
             date.add(-1, 'month');
         }
-        this.setState({ date: date, internalStateChange: true });
+        this.setState({ date: date });
     }
 
     incMonth = (event, date) => {
@@ -60,15 +51,13 @@ export default class AbsoluteCalendarBody extends Component {
         } else {
             date.add(1, 'month');
         }
-        this.setState({ date: date, internalStateChange: true });
+        this.setState({ date: date });
     }
 
     render() {
-        console.log("AbsoluteCalendarBody component : render called " + this.state.internalStateChange);
-        let date = moment(this.props.date, ["YYYY/MM/DD"], true);
-        if (this.state.internalStateChange) {
-            date = this.state.date;
-        }
+        
+        let date = moment(this.state.date, ["YYYY/MM/DD"], true);
+      
         console.log(date.format("YYYY/MM/DD"))
         let displayText = Utils.Months.getMonthText(date.get('month')) + " " + date.get('year');
 
@@ -89,11 +78,8 @@ export default class AbsoluteCalendarBody extends Component {
                 </Grid>
 
                 {(this.state.mode === "calendar") ?
-                    <CompositCalendarView
-                        inputDate={this.props.date}
+                    <CalendarView
                         date={date}
-                        type={this.props.type}
-                        otherDate={this.props.otherDate}
                         callback={this.setDate}
                     /> :
                     (this.state.mode === "month") ?
