@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EmamiLandScapFinal3" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cac271cc-5e5f-4869-90ee-be422b84eb37">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<rectangle>
+				<reportElement x="186" y="6" width="422" height="97" uuid="b1eb8740-57d6-4bd7-884f-7e14c19c393b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="381" y="9" width="224" height="63" forecolor="#006699" uuid="65aed849-3e95-47cc-bf04-71b337d928a5"/>
+				<textElement>
+					<font fontName="Times New Roman" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paper Mills Limited 
+Unit : Balasore]]></text>
+			</staticText>
+			<image>
+				<reportElement x="281" y="7" width="98" height="38" uuid="df62f365-a476-4fac-a8b0-ecbb20816d39"/>
+				<imageExpression><![CDATA["D:/Emami PM3/Emami.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="288" y="71" width="317" height="32" forecolor="#006699" uuid="28c3f6be-3bab-47e1-ae6e-5d6abe696c2a"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AN ISO 9001 : ISO 14001 : OHSAS 18001ANDTPM Awarded 
+                                           Company]]></text>
+			</staticText>
+			<image>
+				<reportElement x="191" y="8" width="89" height="89" uuid="fb270ad6-4050-4663-aecf-597ccd015373"/>
+				<imageExpression><![CDATA["D:/Emami PM3/1.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="195" y="0" width="413" height="83" uuid="4ab3165a-caf5-4f29-bd18-84e4872a4317"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Works : Balgopalpur, P.O. : Rasulpur, Dist. : Balasore - 756 020, Odisha, 
+Tel. No. : (06782) 275756.
+Email : sales@emamipaper.in  Website : www.emamipaper.in
+Head Office : 687, Anandapur, E.M.Bypass, Kolkata-700 107, India,
+Tel. No.: (033) 6613 6264]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="196" y="0" width="404" height="40" forecolor="#006699" uuid="b6ae3c07-87e7-482b-b1a7-c7ffc9f00ee6"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EPM STANDARD NEWSPRINT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="119" splitType="Stretch">
+			<staticText>
+				<reportElement x="198" y="0" width="106" height="26" forecolor="#006699" uuid="83018e19-c552-409e-810d-432ac8b45470"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUBSTANCE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="312" y="0" width="82" height="30" uuid="c391f404-cb2b-40f3-b952-a86350a6375d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="387" y="-1" width="116" height="26" forecolor="#006699" uuid="532ec32d-6ea0-4f48-8a37-9171fd8d3909"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REEL WIDTH:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="498" y="-1" width="110" height="30" uuid="46641dca-4768-4f6d-870a-40048d4837c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="498" y="43" width="110" height="30" uuid="586a2b04-5ed7-4469-a8e5-ade5383d9d76"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="42" width="86" height="26" forecolor="#006699" uuid="e5a6210b-68f9-4f89-813a-5e7623bf311a"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REEL NO.:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="487" y="81" width="110" height="30" uuid="b7f8966b-2e38-4e74-bc56-382ba1aee7e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="389" y="81" width="96" height="26" forecolor="#006699" uuid="effadb93-2d0d-40f1-aaf4-2691e7e01710"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LENGTH   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="41" width="48" height="24" forecolor="#006699" uuid="c38da058-c068-41e5-9781-64c857678e31"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KGS.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="281" y="44" width="82" height="30" uuid="03116601-4103-4f5d-b638-67a2da609441"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="196" y="43" width="101" height="26" forecolor="#006699" uuid="bac413a4-ce7d-4362-bd8a-0d87cf8d8fb0"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REEL WT.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="84" width="88" height="26" forecolor="#006699" uuid="20e4cdda-f6b7-4b3c-a757-8278f0f4bd65"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LOT NO.   :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="288" y="84" width="82" height="30" uuid="2edc3ad1-d3ea-435d-9d95-7f090ee2fc26"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{MASTER_TOTAL_PAGES}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="98" splitType="Stretch">
+			<componentElement>
+				<reportElement x="251" y="8" width="303" height="40" uuid="d84d6e94-ae65-4508-82c1-963f0e7c8a51"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128A" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

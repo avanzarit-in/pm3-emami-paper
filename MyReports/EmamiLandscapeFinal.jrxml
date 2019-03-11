@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="69b4e788-3512-4399-b3ad-8760d59f1d0a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="123">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<rectangle>
+				<reportElement x="20" y="8" width="111" height="115" uuid="d28bcf1a-18e6-49c4-beb9-b732c8f7679a"/>
+			</rectangle>
+			<image>
+				<reportElement x="23" y="13" width="108" height="79" uuid="e33bdc3a-ca08-4ac6-b449-86619287d72f"/>
+				<imageExpression><![CDATA["D:/Emami PM3/Emami_logo_1.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="146" y="13" width="514" height="110" uuid="1739204b-2d73-4108-bba9-4b5174e72a8c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="282" y="20" width="308" height="80" forecolor="#006699" uuid="5e0db698-e764-4758-bdb9-d38563051e55"/>
+				<textElement>
+					<font fontName="Times New Roman" size="33" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paper Mills Limited 
+Unit : Balasore]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="102" width="507" height="21" forecolor="#006699" uuid="728485de-007b-4a1d-a43e-625a33b24c85"/>
+				<textElement>
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AN ISO 9001 : ISO 14001 : OHSAS 18001 AND TPM Awarded Company]]></text>
+			</staticText>
+			<image>
+				<reportElement x="148" y="15" width="132" height="60" uuid="96db886e-42f9-434a-9de0-ef45556b3fed"/>
+				<imageExpression><![CDATA["D:/Emami PM3/Emami.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="6" width="760" height="54" uuid="7314f8e3-75d3-470c-8326-57c14234f2cd"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Works : Balgopalpur, P.O. : Rasulpur, Dist. : Balasore - 756 020, Orissa, Tel. No. : (06782) 275756.
+Email : sales@emamipaper.in  Website : www.emamipaper.in
+Head Office : Unit No. 1, 15th Floor, ACROPOLIS, 1858/1, Rajdanga Main Road, Kasba, Kolkata-700 107, India]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<rectangle radius="9">
+				<reportElement x="20" y="5" width="760" height="61" uuid="34b40760-7b2f-47ff-8ac4-64027cbcf818"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="40" y="5" width="730" height="61" forecolor="#006699" uuid="5c8dcc8c-2280-4005-b51a-a946ef8f8ffc"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="Arial" size="50" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EPM STANDARD NEWSPRINT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="224" splitType="Stretch">
+			<rectangle radius="9">
+				<reportElement x="20" y="10" width="380" height="61" uuid="0603a0e6-651c-411b-8532-6d8ab80f0e21"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="26" y="10" width="134" height="61" forecolor="#006699" uuid="fac6b7ea-f5fd-49f4-b2f6-5b893b8b7dc0"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUBSTANCE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="12" width="55" height="59" forecolor="#006699" uuid="a45100af-6464-4d8e-9ec9-e0be27da274c"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GSM]]></text>
+			</staticText>
+			<rectangle radius="9">
+				<reportElement x="20" y="87" width="380" height="61" uuid="1610dfc2-07e9-45bb-af90-9c8871d26c90"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="26" y="87" width="144" height="61" forecolor="#006699" uuid="9095cbb4-c91d-4fd1-b029-72d329f3995a"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REEL WEIGHT:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="89" width="55" height="59" forecolor="#006699" uuid="054c520d-be7b-418a-a4b0-53b5bee3b276"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KGS.]]></text>
+			</staticText>
+			<rectangle radius="9">
+				<reportElement x="20" y="163" width="380" height="61" uuid="3bb4ff89-8290-4d46-9169-0285053d2492"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="26" y="163" width="144" height="61" forecolor="#006699" uuid="d40f33e9-42c8-415d-8eeb-9803211c5a38"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LOT NO. :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="165" width="55" height="59" forecolor="#006699" uuid="62b51137-2c14-4e18-ac13-ad2add3b043e"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<rectangle radius="9">
+				<reportElement x="410" y="10" width="370" height="61" uuid="bd5518d3-93af-41e4-bba4-bb2c292b7a2d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="416" y="10" width="144" height="61" forecolor="#006699" uuid="2af3f7ce-7e9f-445c-8458-b5636ec3b85a"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REEL WIDTH:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="710" y="12" width="50" height="59" forecolor="#006699" uuid="5d95d529-8e65-4401-8260-e2b676a0ec7b"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CM]]></text>
+			</staticText>
+			<rectangle radius="9">
+				<reportElement x="410" y="87" width="370" height="61" uuid="c326d2e1-7475-4327-92c0-1ba75582cc60"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="416" y="87" width="144" height="61" forecolor="#006699" uuid="26f0082e-c392-4edc-89ec-8bd0bd64a66c"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REEL NO.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="710" y="89" width="50" height="59" forecolor="#006699" uuid="e67f9ff5-1ebe-4b76-8a55-ad060d9f3a4c"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GSM]]></text>
+			</staticText>
+			<rectangle radius="9">
+				<reportElement x="410" y="163" width="370" height="61" uuid="79bf4e72-bcca-4e1c-8b9a-8cd4bdabe12b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="416" y="163" width="144" height="61" forecolor="#006699" uuid="1a0e3dfd-148e-4501-a054-219d8b75c073"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LENGTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="710" y="165" width="50" height="59" forecolor="#006699" uuid="e3347e28-b8a3-4d36-a623-881fce5d3648"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MTR]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="105" y="9" width="600" height="34" uuid="928ac715-f9b1-4453-9771-6da398c2ab1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(PLEASE SEND THIS LABLE IN CASE OF ANY COMPLAINT)]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="263" y="46" width="354" height="36" uuid="26febc10-7b89-45a7-9e44-4136ae78e9b3"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128A" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
