@@ -3,6 +3,9 @@ import {  Menu, Dropdown, Icon } from 'semantic-ui-react'
 import "./App.css"
 import ReelManagement from './components/reel-management/ReelManagement'
 import ParentReelManagement from './components/parent-reel-management/ParentReelManagement'
+import Admin from './Admin'
+import DeliveryMaster from './components/parent-reel-management/DeliveryMaster'
+import ProductMaster from './components/parent-reel-management/ProductMaster'
 import PackageManagement from './components/package-management/PackageManagement'
 import { SemanticToastContainer } from 'react-semantic-toasts';
 
@@ -24,9 +27,10 @@ this.setState({activeItem:name})
      
       <div>
          
-        <Menu size="large" inverted pointing   >
+            <Menu size="large" inverted pointing   >
 
-           <Menu.Item name='Parent Reel Master' 
+           
+            <Menu.Item name='Parent Reel Master' 
            active={activeItem === 'prm'} 
            onClick={()=>this.handleItemClick('prm')} />
           <Menu.Item
@@ -73,11 +77,13 @@ this.setState({activeItem:name})
         </Menu>
       
         {this.state.activeItem==="prm"?
+       
         <ParentReelManagement/>:this.state.activeItem==="rp"?
+       
         <ReelManagement  />:this.state.activeItem==="ps"?
         <PackageManagement/>:this.state.activeItem==="report"?
         <div>REPORT</div>:this.state.activeItem==="admin"?
-        <div>ADMIN</div>:null}
+        <div><Admin /></div>:null}
            <SemanticToastContainer position="bottom-right" />
       </div>
     );

@@ -116,7 +116,7 @@ Head Office : 687, Anandapur, E.M.Bypass, Kolkata-700 107, India,
 				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="344" y="41" width="48" height="24" forecolor="#006699" uuid="d9b9cb14-3ba8-4e24-887e-775d5759b0b5"/>
+				<reportElement x="331" y="45" width="48" height="24" forecolor="#006699" uuid="d9b9cb14-3ba8-4e24-887e-775d5759b0b5"/>
 				<box>
 					<pen lineWidth="0.0"/>
 				</box>
@@ -126,7 +126,7 @@ Head Office : 687, Anandapur, E.M.Bypass, Kolkata-700 107, India,
 				<text><![CDATA[KGS.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="398" y="42" width="86" height="26" forecolor="#006699" uuid="11af465e-86bf-4276-89fa-4c75315d47fb"/>
+				<reportElement x="385" y="43" width="86" height="26" forecolor="#006699" uuid="11af465e-86bf-4276-89fa-4c75315d47fb"/>
 				<box>
 					<pen lineWidth="0.0"/>
 				</box>
