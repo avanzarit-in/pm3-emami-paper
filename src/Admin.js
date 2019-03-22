@@ -4,6 +4,7 @@ import "./App.css"
 
 import DeliveryMaster from './components/parent-reel-management/DeliveryMaster'
 import ProductMaster from './components/parent-reel-management/ProductMaster'
+import Filter from './components/filterandsearch/Filter'
 
 import { SemanticToastContainer } from 'react-semantic-toasts';
 
@@ -34,15 +35,18 @@ this.setState({activeItem:name})
            active={activeItem === 'pm'} 
            onClick={()=>this.handleItemClick('pm')} />
             
-
+            <Menu.Item name='Filter' 
+           active={activeItem === 'fs'} 
+           onClick={()=>this.handleItemClick('fs')} />
 
   
         </Menu>
       
         {this.state.activeItem==="dm"?
          <DeliveryMaster/>:this.state.activeItem==="pm"?
+         <ProductMaster/>:this.state.activeItem==="fs"?
          
-        <div><ProductMaster/></div>:null}
+        <div><Filter/></div>:null}
            <SemanticToastContainer position="bottom-right" />
       </div>
     );
