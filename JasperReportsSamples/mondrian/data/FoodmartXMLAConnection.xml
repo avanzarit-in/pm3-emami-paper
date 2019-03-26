@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmlaDataAdapter class="net.sf.jasperreports.data.xmla.XmlaDataAdapterImpl"><name>Foodmart XMLA Connection</name><xmlaUrl> http://localhost:8080/jasperserver-pro/xmla</xmlaUrl><datasource>Provider=Mondrian;DataSource=JRS</datasource><catalog>Foodmart</catalog><cube>HR</cube><username>jasperadmin</username><password>jasperadmin</password><savePassword>false</savePassword></xmlaDataAdapter>
