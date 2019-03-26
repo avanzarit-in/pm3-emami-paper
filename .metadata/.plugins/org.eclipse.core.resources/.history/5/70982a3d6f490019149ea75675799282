@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EmamiReportDetailsView" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f930c025-9b52-4644-bc1c-bbcdc3c5b558">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[IlBPU0lUSU9OUyIgQVMgLDE3NCw2OCwwNmMyN2RkOC1iM2VlLTRlYTMtOTZhYi1iZjEzMDFjYjA3
+NmM7]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT "POSITIONS"."DOCUMENTID",
+	"POSITIONS"."POSITIONNO",
+	"POSITIONS"."PRODUCTID",
+	"POSITIONS"."QUANTITY",
+	"POSITIONS"."PRICE"
+FROM "POSITIONS"]]>
+	</queryString>
+	<field name="DOCUMENTID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="DOCUMENTID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="POSITIONS"/>
+	</field>
+	<field name="POSITIONNO" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="POSITIONNO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="POSITIONS"/>
+	</field>
+	<field name="PRODUCTID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="PRODUCTID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="POSITIONS"/>
+	</field>
+	<field name="QUANTITY" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="QUANTITY"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="POSITIONS"/>
+	</field>
+	<field name="PRICE" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="PRICE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="POSITIONS"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="205" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="800" height="200" uuid="691037b6-8900-47c2-85db-d5fc737a8c7d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="800" height="61" uuid="5d59e60c-4143-4cfe-ab87-38fca1d3bf80"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMAMI PAPER MILLS LIMITED]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="157" width="800" height="43" uuid="11e92aea-cc00-47a0-aaae-72139f39068b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="140" y="61" width="480" height="96" uuid="cd6d5ea2-1ea3-4208-82f7-2c1359eabeb7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="140" y="124" width="480" height="33" uuid="8a17d8f5-bb64-4634-b7e9-3dd5cab8cb9c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TITLE  :  DAILY   PRODUCTION   REPORT  ( PM - II / III )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="61" width="130" height="63" uuid="b1fa0101-1a72-4337-b239-240dd144ab0e"/>
+				<box bottomPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[QUALITY RECORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="61" width="79" height="29" uuid="2af608c5-92b4-4dcf-b1eb-43ec19baae2b"/>
+				<box bottomPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOC NO.  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="90" width="79" height="34" uuid="09647fd5-6433-4948-8ac0-8b0c56ff617d"/>
+				<box bottomPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAGE NO.  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="61" width="86" height="29" uuid="2f1d9876-0f47-43f5-a5dc-4cb00326af28"/>
+				<box bottomPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ISSUE NO.  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="90" width="86" height="34" uuid="dbd22adb-bdb4-439f-a06d-dc0e3135dc72"/>
+				<box bottomPadding="0">
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATE  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="157" width="78" height="43" uuid="57595059-bc23-4ab0-bee5-0abbd16f2698"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[LOT NO. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="157" width="100" height="43" uuid="eef3b7b6-5cee-4598-9080-ebb630213a20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[DATE OF WEIGHTMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="157" width="100" height="43" uuid="1031f96c-48b7-43ad-85ab-f6c1e66e2737"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[QUALITY CODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="157" width="130" height="43" uuid="0f7c2b31-875f-41fe-ab01-b4f2aad769bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[QUALITY NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="448" y="157" width="30" height="43" uuid="2159186b-a64e-4334-b269-756f7b65d366"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[GSM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="157" width="30" height="43" uuid="da0304ba-af22-491e-85a6-ba2fdfa1a470"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SIZE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="520" y="157" width="53" height="43" uuid="61ff8c28-ad40-4b4e-9834-19757f32325f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SHEETS PER REEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="578" y="157" width="75" height="43" uuid="7096e02c-950d-4669-9ca3-856cd0ed4c19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[WEIGHT PER REEL / REAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="659" y="157" width="75" height="43" uuid="47d0639b-224c-49a7-8b46-e39888bddcdc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NO OF  REEL / REAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="738" y="157" width="55" height="43" uuid="06b7a913-bcf5-4967-8c1e-9ae57c9ab691"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NO OF DAM.REEL]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="65" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="800" height="61" uuid="f1f3086c-d65a-4827-b59a-40b8a63e66be"/>
+			</rectangle>
+			<textField>
+				<reportElement x="3" y="24" width="77" height="30" uuid="f4c5acff-a094-4b69-8a63-86133957d785"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="86" y="27" width="77" height="30" uuid="a01b523c-b14b-4256-b35f-15ff5fd03240"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="186" y="30" width="77" height="30" uuid="db3ef67b-aed9-4c46-8d66-c460a99f9d3f"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="17" width="28" height="30" uuid="f8728807-53a5-45bd-bce7-5a90a617c01a"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="17" width="28" height="30" uuid="05a958f6-17e5-4e3f-bb68-0455bf44161d"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="17" width="53" height="30" uuid="8c2c5e5d-d14f-4730-b2f9-8aceaccfda57"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="661" y="15" width="53" height="30" uuid="e8a71097-95c6-4158-8859-29ab3120eaeb"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="738" y="17" width="53" height="30" uuid="e0b483f4-25e9-42e6-ba3a-da3a55b3a216"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="800" height="45" uuid="87a7676d-b0e5-466e-91d3-8d027c261a3d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="461" y="1" width="53" height="43" uuid="1e749644-2c38-4324-851d-3cb35872e59a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[TOTAL  :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="581" y="7" width="53" height="30" uuid="a4e0a148-f38a-45e6-9ca8-b31e5dfb2a65"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="659" y="9" width="53" height="30" uuid="eac6e6a2-587a-42d3-8bef-b9eb432b783c"/>
+				<textFieldExpression><![CDATA[$F{DOCUMENTID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
