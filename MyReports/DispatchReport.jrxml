@@ -3,8 +3,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DispatchReport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81501e7b-c503-4370-8b31-7f0e7bea1a27">
 	<property name="com.jaspersoft.studio.data.sql.tables">
 		<![CDATA[IkFERFJFU1MiIEFTICwxNDAsMTIyLDUzZDYzODI0LTdmYzctNGFmNC1hZmY2LThjY2M0NmNkOGJi
-ODs=
-]]>
+ODs=]]>
 	</property>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
 	<queryString language="SQL">
@@ -39,7 +38,22 @@ FROM "ADDRESS"]]>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="181" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="800" height="81" uuid="4fc95ffd-ccbf-465a-8420-1207a7d75f69"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="10" width="240" height="61" uuid="beef5e8b-7c0d-4849-80fb-67bbd2c78632"/>
+				<text><![CDATA[EMAMI PAPER MILLS LIMITED  UNIT : III]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="10" width="370" height="30" uuid="ce6ebe8f-b618-4992-ac0c-c06bba668dcf"/>
+				<text><![CDATA[DISPATCH REGISTER SUMMARY REPORT FROM ../.../..TO.../.../..]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="5" y="218" width="800" height="51" uuid="0e4b0568-68c6-4cfe-bdb4-079cfaa29363"/>
+			</rectangle>
+		</band>
 	</title>
 	<pageHeader>
 		<band height="35" splitType="Stretch"/>
