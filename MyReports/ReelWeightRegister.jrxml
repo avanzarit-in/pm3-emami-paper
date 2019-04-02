@@ -142,7 +142,7 @@ FROM "ORDERS"]]>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[TITLE :  DAILY PRODUCTION REPORT  (PM - II / III)]]></text>
+				<text><![CDATA[TITLE :  DAILY PRODUCTION REPORT  (PM - II,III)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="457" y="94" width="89" height="41" uuid="3330eb17-05ae-40ab-ad95-d5ed80c72031"/>

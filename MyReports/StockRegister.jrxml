@@ -445,16 +445,6 @@ CMS]]></text>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{SumId}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="970" y="-10" width="60" height="66" uuid="8a2b9f17-8802-41aa-ade7-12bc00903374">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c59e0b4f-48f6-4a86-bbea-7035cedeb832"/>
-				</reportElement>
-				<box>
-					<pen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$F{EMPLOYEEID}]]></textFieldExpression>
-			</textField>
 		</band>
 	</summary>
 </jasperReport>
