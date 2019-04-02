@@ -5,7 +5,7 @@ import "./App.css"
 import DeliveryMaster from './components/parent-reel-management/DeliveryMaster'
 import ProductMaster from './components/parent-reel-management/ProductMaster'
 import Date1 from './components/parent-reel-management/Date1'
-import Filter from './Filter'
+import AppFilter from './AppFilter'
 import { SemanticToastContainer } from 'react-semantic-toasts';
 
 const trigger = (userName) => (
@@ -37,7 +37,7 @@ this.setState({activeItem:name})
             <Menu.Item name='Date1' 
            active={activeItem === 'dt'} 
            onClick={()=>this.handleItemClick('dt')} />
-            <Menu.Item name='Filter' 
+            <Menu.Item name='AppFilter' 
            active={activeItem === 'ft'} 
            onClick={()=>this.handleItemClick('ft')} />
 
@@ -50,7 +50,7 @@ this.setState({activeItem:name})
          <ProductMaster/>:this.state.activeItem==="dt"?
          <Date1/>:this.state.activeItem==="ft"?
          
-        <div><Filter /></div>:null}
+        <div><AppFilter /></div>:null}
            <SemanticToastContainer position="bottom-right" />
       </div>
     );
