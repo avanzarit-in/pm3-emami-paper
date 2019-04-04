@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dsDataAdapter class="net.sf.jasperreports.data.ds.DataSourceDataAdapterImpl"><name>XLS Datasource Sample</name><factoryClass>net.sf.jasperreports.samples.xlsdatasource.XlsDataSourceUtil</factoryClass><methodToCall>getXlsDataSource</methodToCall></dsDataAdapter>

@@ -22,6 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /.metadata/
+<<<<<<< HEAD
 
 
 # Compiled class file
@@ -74,3 +75,5 @@ yarn-error.log*
 
 
 hs_err_pid*
+=======
+>>>>>>> master

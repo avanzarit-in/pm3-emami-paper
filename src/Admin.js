@@ -4,7 +4,9 @@ import "./App.css"
 
 import DeliveryMaster from './components/parent-reel-management/DeliveryMaster'
 import ProductMaster from './components/parent-reel-management/ProductMaster'
-import Filter from './components/filterandsearch/Filter'
+
+import Date1 from './components/parent-reel-management/Date1'
+import AppFilter from './AppFilter'
 
 import { SemanticToastContainer } from 'react-semantic-toasts';
 
@@ -34,19 +36,27 @@ this.setState({activeItem:name})
             <Menu.Item name='Product Master' 
            active={activeItem === 'pm'} 
            onClick={()=>this.handleItemClick('pm')} />
-            
-            <Menu.Item name='Filter' 
-           active={activeItem === 'fs'} 
-           onClick={()=>this.handleItemClick('fs')} />
+
+            <Menu.Item name='Date1' 
+           active={activeItem === 'dt'} 
+           onClick={()=>this.handleItemClick('dt')} />
+            <Menu.Item name='AppFilter' 
+           active={activeItem === 'ft'} 
+           onClick={()=>this.handleItemClick('ft')} />
+
+
 
   
         </Menu>
       
         {this.state.activeItem==="dm"?
          <DeliveryMaster/>:this.state.activeItem==="pm"?
-         <ProductMaster/>:this.state.activeItem==="fs"?
+
+         <ProductMaster/>:this.state.activeItem==="dt"?
+         <Date1/>:this.state.activeItem==="ft"?
          
-        <div><Filter/></div>:null}
+        <div><AppFilter /></div>:null}
+
            <SemanticToastContainer position="bottom-right" />
       </div>
     );

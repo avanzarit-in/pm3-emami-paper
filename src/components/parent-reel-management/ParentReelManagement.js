@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import DataGrid from './../data-grid/DataGrid';
 import withDataServices from './../hoc/withDataServices';
 import { Dimmer, Loader } from 'semantic-ui-react';
+import Date1 from './Date1'
 
 const columns = [
     { key: "LOTNO", title: "LOT NO", mandatory: true },
     { key: "PARENTRLNO", title: "PARENT REEL NO", mandatory: true },
-    { key: "MFGDATE", title: "REEL MFG DATE", mandatory: true },
+    { key: "MFGDATE", title: "REEL MFG DATE", mandatory: true, editable : true, formatter : <Date1/> },
     { key: "WEIGHT", title: "PARENT ROLL WT", mandatory: true }
 ];
 

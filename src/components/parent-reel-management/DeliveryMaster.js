@@ -4,11 +4,13 @@ import withDataServices from './../hoc/withDataServices';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
 const columns = [
-    { key: "ACNAME", title: "A/C NAME", mandatory: true },
-    { key: "FULLNAME", title: "FULL NAME", mandatory: true },
-    { key: "ADDRESS", title: "ADDRESS", mandatory: true },
-    { key: "DIST", title: "DIST", mandatory: true },
-    { key: "PINCODE", title: "PIN CODE", mandatory: true }
+
+    { key: "CONSIGNEEID", title: "CONSIGNEE ID", mandatory: false,readOnly:true },
+    { key: "COUNTRY", title: "COUNTRY", mandatory: true },
+    { key: "REGION", title: "REGION", mandatory: true },
+    { key: "PINCODE", title: "PIN CODE", mandatory: true },
+    { key: "ADDRESS", title: "ADDRESS", mandatory: true }
+
 ];
 
 class DeliveryMaster extends Component {
@@ -20,7 +22,9 @@ class DeliveryMaster extends Component {
     }
     createNewRow = (rowId) => {
         return new Promise((resolve, reject) => {
-            this.props.deliveryMasterService.create({ _id: rowId, ACNAME: "", FULLNAME: "", ADDRESS: "", DIST: "" ,PINCODE:""}).then(data => {
+
+            this.props.deliveryMasterService.create({ _id: rowId, COUNTRY: "", REGION: "", PINCODE: "", ADDRESS: "" }).then(data => {
+
                 resolve(data);
             })
         })
@@ -29,11 +33,13 @@ class DeliveryMaster extends Component {
     saveHook = (item) => {
         console.log(item);
         return new Promise((resolve, reject) => {
-            if ( item.ACNAME === "" || item.FULLNAME === "" || item.ADDRESS === ""|| item.DIST === ""|| item.PINCODE === "") {
+
+            if ( item.COUNTRY === "" || item.REGION === "" || item.PINCODE === ""|| item.ADDRESS === "") {
                 resolve(false);
             } else {
                 this.props.deliveryMasterService.patch(item.ROWID, 
-                { "ACNAME": item.ACNAME, "FULLNAME": item.FULLNAME, "ADDRESS": item.ADDRESS, "DIST": item.DIST,"PINCODE": item.PINCODE })
+                { "COUNTRY": item.COUNTRY, "REGION": item.REGION, "PINCODE": item.PINCODE, "ADDRESS": item.ADDRESS })
+
                 .then(patchedItem => {
                     resolve(true);
                 })

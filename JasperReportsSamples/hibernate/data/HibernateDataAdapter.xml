@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernateDataAdapter class="net.sf.jasperreports.data.hibernate.HibernateDataAdapterImpl"><name>Hibernate Sample DB</name><xMLFileName>/Users/mrabbi/git/jrsamples/JasperReportsSamples/src/net/sf/jasperreports/samples/hibernate/hibernate.cfg.xml</xMLFileName><propertiesFileName></propertiesFileName><useAnnotation>false</useAnnotation></hibernateDataAdapter>

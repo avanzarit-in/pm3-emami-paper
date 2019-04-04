@@ -20,4 +20,14 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>net.sf.jasperreports.nature</nature>
 	</natures>
+<<<<<<< HEAD
+=======
+	<linkedResources>
+		<link>
+			<name>Bar3DChartReport.jrxml</name>
+			<type>1</type>
+			<location>D:/Emami PM3/pm3-emami-paper/JasperReportsSamples/charts/Bar3DChartReport.jrxml</location>
+		</link>
+	</linkedResources>
+>>>>>>> master
 </projectDescription>
