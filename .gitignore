@@ -21,10 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
-/.metadata/
-<<<<<<< HEAD
-
 
 # Compiled class file
 
@@ -76,9 +72,6 @@ yarn-error.log*
 
 
 hs_err_pid*
-=======
->>>>>>> master
-=======
+
 .metadata/
 JasperReportsSamples/
->>>>>>> master
