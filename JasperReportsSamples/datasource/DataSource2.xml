@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<dsDataAdapter class="net.sf.jasperreports.data.ds.DataSourceDataAdapterImpl"><name>DataSource2</name><factoryClass>net.sf.jasperreports.samples.datasource.CustomTableModel</factoryClass><methodToCall>createDataSourceInstance</methodToCall></dsDataAdapter>

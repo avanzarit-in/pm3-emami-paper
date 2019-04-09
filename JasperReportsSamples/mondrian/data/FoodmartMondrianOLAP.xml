@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<mondrianDataAdapter class="net.sf.jasperreports.data.mondrian.MondrianDataAdapterImpl"><name>Foodmart Mondrian OLAP</name><driver>org.postgresql.Driver</driver><username>postgres</username><password>postgres</password><savePassword>true</savePassword><url>jdbc:postgresql://localhost:5432/foodmart</url><database></database><serverAddress></serverAddress><catalogURI>/Users/mrabbi/git/jrsamples/JasperReportsSamples/mondrian/data/FoodMart.xml</catalogURI></mondrianDataAdapter>

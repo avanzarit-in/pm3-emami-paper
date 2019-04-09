@@ -9,9 +9,6 @@ import Admin from './Admin'
 
 import DeliveryMaster from './components/parent-reel-management/DeliveryMaster'
 import ProductMaster from './components/parent-reel-management/ProductMaster'
-import Date1 from './components/parent-reel-management/Date1'
-import createRowData from './createRowData'
-
 import PackageManagement from './components/package-management/PackageManagement'
 import { SemanticToastContainer } from 'react-semantic-toasts';
 
