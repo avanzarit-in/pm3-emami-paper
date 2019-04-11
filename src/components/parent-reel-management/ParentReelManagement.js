@@ -4,45 +4,44 @@ import withDataServices from './../hoc/withDataServices';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import ReactDataGrid from "react-data-grid";
 import DatePicker from 'react-date-picker';
-//import ReactDOM from "react-dom";
+import ReactDOM from "react-dom";
 
 
 class DateEditor extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-        date: new Date(),
-      }
-     
-  }
- 
-  onChange = date => this.setState({ date })
-
-
-
-  getValue() {
-    return { MFGDATE: this.state.date };
-  }
-
- /* getInputNode() {
-    return ReactDOM.findDOMNode(this).getElementsByTagName("input")[0];
-  }*/
-
-
-  /*handleChangeComplete = date => {
-    this.setState({ date: date}, () => this.props.onCommit());
-  };*/
-  render() {
-    return (
+    constructor(props) {
+      super(props);
+      this.state = {
+          date: new Date(),
+        }
+       
+    }
    
-      <DatePicker
-      onChange={this.onChange}
-      value={this.state.date}
-    />
-    );
+    onChange = date => this.setState({ date })
+  
+  
+  
+    getValue() {
+      return { MFGDATE: this.state.date };
+    }
+  
+    getInputNode() {
+      return ReactDOM.findDOMNode(this).getElementsByTagName("input")[0];
+    }
+  
+  
+    handleChangeComplete = date => {
+      this.setState({ date: date}, () => this.props.onCommit());
+    };
+    render() {
+      return (
+     
+        <DatePicker
+        onChange={this.onChange}
+        value={this.state.date}
+      />
+      );
+    }
   }
-}
-
 
 const columns = [
     { key: "LOTNO", title: "LOT NO", mandatory: true },
@@ -68,7 +67,7 @@ class ParentReelManagement extends Component {
         })
     }
 
-     /* onGridRowsUpdated = ({ fromRow, toRow, updated }) => {
+     onGridRowsUpdated = ({ fromRow, toRow, updated }) => {
     this.setState(state => {
       const rows = state.rows.slice();
       for (let i = fromRow; i <= toRow; i++) {
@@ -76,7 +75,7 @@ class ParentReelManagement extends Component {
       }
       return { rows };
     });
-  };*/
+  };
     saveHook = (item) => {
         console.log(item);
         return new Promise((resolve, reject) => {
