@@ -2,46 +2,6 @@ import React, { Component } from 'react';
 import ReactDataGrid from 'react-data-grid';
 import $ from 'jquery'
 import { toast } from 'react-semantic-toasts';
-import DatePicker from 'react-date-picker';
-import ReactDOM from "react-dom";
-
-class DateEditor extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-          date: new Date(),
-        }
-       
-    }
-   
-    onChange = date => this.setState({ date })
-  
-  
-  
-    getValue() {
-      return { MFGDATE: this.state.date };
-    }
-  
-    getInputNode() {
-      return ReactDOM.findDOMNode(this).getElementsByTagName("input")[0];
-    }
-  
-  
-    handleChangeComplete = date => {
-      this.setState({ date: date}, () => this.props.onCommit());
-    };
-    render() {
-      return (
-     
-        <DatePicker
-        onChange={this.onChange}
-        value={this.state.date}
-      />
-      );
-    }
-  }
-  
-
 export default class DataGrid extends Component {
     constructor(props) {
         super(props);
@@ -137,7 +97,7 @@ export default class DataGrid extends Component {
             if(column.readOnly!==undefined && column.readOnly){
                 notEditableColumns.push(index);
             }
-            return { key: column.key, editable: (data) => this.isEditable(data), headerRenderer: () => <div className="header-wrapper">{column.groupTitle!==undefined?column.groupTitle():null}{column.title}{column.mandatory ? <span style={{ color: 'red' }}>*</span> : ""}</div> }
+            return { key: column.key,editor:column.editor,formatter:column.formatter, editable: (data) => this.isEditable(data), headerRenderer: () => <div className="header-wrapper">{column.groupTitle!==undefined?column.groupTitle():null}{column.title}{column.mandatory ? <span style={{ color: 'red' }}>*</span> : ""}</div> }
         });
 
         if (this.props.rows.length === 0) {
