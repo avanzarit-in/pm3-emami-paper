@@ -2,6 +2,45 @@ import React, { Component } from 'react';
 import ReactDataGrid from 'react-data-grid';
 import $ from 'jquery'
 import { toast } from 'react-semantic-toasts';
+import DatePicker from 'react-date-picker';
+import ReactDOM from "react-dom";
+
+class DateEditor extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+          date: new Date(),
+        }
+       
+    }
+   
+    onChange = date => this.setState({ date })
+  
+  
+  
+    getValue() {
+      return { MFGDATE: this.state.date };
+    }
+  
+    getInputNode() {
+      return ReactDOM.findDOMNode(this).getElementsByTagName("input")[0];
+    }
+  
+  
+    handleChangeComplete = date => {
+      this.setState({ date: date}, () => this.props.onCommit());
+    };
+    render() {
+      return (
+     
+        <DatePicker
+        onChange={this.onChange}
+        value={this.state.date}
+      />
+      );
+    }
+  }
+  
 
 export default class DataGrid extends Component {
     constructor(props) {
@@ -21,6 +60,16 @@ export default class DataGrid extends Component {
          this.state.currentColIndex=-1;
         this.state.isScrolling = false;
     }
+
+    onGridRowsUpdated = ({ fromRow, toRow, updated }) => {
+        this.setState(state => {
+          const rows = state.rows.slice();
+          for (let i = fromRow; i <= toRow; i++) {
+            rows[i] = { ...rows[i], ...updated };
+          }
+          return { rows };
+        });
+      };
 
     isEditable = (data) => {
         console.log(data);
@@ -221,6 +270,7 @@ export default class DataGrid extends Component {
                 scrollToRowIndex={this.state.totalRows - 1}
                 headerRowHeight={this.props.headerRowHeight}
                 onScroll={this.onScroll}
+                
             />
         );
     }
