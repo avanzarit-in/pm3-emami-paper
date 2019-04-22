@@ -4,13 +4,14 @@ import withDataServices from './../hoc/withDataServices';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
 const columns = [
-    { key: "LOTNO", title: "LOT NO", mandatory: false,readOnly:true },
-    { key: "PARENTRLNO", title: "PARENT REEL NO", mandatory: true },
-    { key: "MFGDATE", title: "REEL MFG DATE", mandatory: true, editable : true },
-    { key: "WEIGHT", title: "PARENT ROLL WT", mandatory: true }
+    { key: "CONSIGNEEID", title: "CONSIGNEE ID", mandatory: false,readOnly:true },
+    { key: "COUNTRY", title: "COUNTRY", mandatory: true },
+    { key: "REGION", title: "REGION", mandatory: true },
+    { key: "PINCODE", title: "PIN CODE", mandatory: true },
+    { key: "ADDRESS", title: "ADDRESS", mandatory: true }
 ];
 
-class ParentReelManagement extends Component {
+class DeliveryMaster extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -19,7 +20,7 @@ class ParentReelManagement extends Component {
     }
     createNewRow = (rowId) => {
         return new Promise((resolve, reject) => {
-            this.props.parentReelMasterService.create({ _id: rowId, LOTNO: "", PARENTRLNO: "", MFGDATE: "", WEIGHT: "" }).then(data => {
+            this.props.deliveryMasterService.create({ _id: rowId, COUNTRY: "", REGION: "", PINCODE: "", ADDRESS: "" }).then(data => {
                 resolve(data);
             })
         })
@@ -28,11 +29,11 @@ class ParentReelManagement extends Component {
     saveHook = (item) => {
         console.log(item);
         return new Promise((resolve, reject) => {
-            if ( item.PARENTRLNO === "" || item.MFGDATE === "" || item.WEIGHT === "") {
+            if ( item.COUNTRY === "" || item.REGION === "" || item.PINCODE === ""|| item.ADDRESS === "") {
                 resolve(false);
             } else {
-                this.props.parentReelMasterService.patch(item.ROWID, 
-                { "LOTNO": item.LOTNO, "PARENTRLNO": item.PARENTRLNO, "MFGDATE": item.MFGDATE, "WEIGHT": item.WEIGHT })
+                this.props.deliveryMasterService.patch(item.ROWID, 
+                { "COUNTRY": item.COUNTRY, "REGION": item.REGION, "PINCODE": item.PINCODE, "ADDRESS": item.ADDRESS })
                 .then(patchedItem => {
                     resolve(true);
                 })
@@ -41,7 +42,7 @@ class ParentReelManagement extends Component {
     }
 
     componentDidMount() {
-        this.props.parentReelMasterService.find().then(items => {
+        this.props.deliveryMasterService.find().then(items => {
             this.setState({ rows: items, isLoading: false });
         })
     }
@@ -57,6 +58,6 @@ class ParentReelManagement extends Component {
     }
 }
 
-export default withDataServices(ParentReelManagement, ['parentReelMaster'], (parentReelMasterService) => ({
-    parentReelMasterService: parentReelMasterService
+export default withDataServices(DeliveryMaster, ['deliveryMaster'], (deliveryMasterService) => ({
+    deliveryMasterService: deliveryMasterService
 }));

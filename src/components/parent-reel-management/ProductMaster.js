@@ -4,13 +4,14 @@ import withDataServices from './../hoc/withDataServices';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
 const columns = [
-    { key: "LOTNO", title: "LOT NO", mandatory: false,readOnly:true },
-    { key: "PARENTRLNO", title: "PARENT REEL NO", mandatory: true },
-    { key: "MFGDATE", title: "REEL MFG DATE", mandatory: true, editable : true },
-    { key: "WEIGHT", title: "PARENT ROLL WT", mandatory: true }
+    { key: "PRODUCTNO", title: "PRODUCT NO.", mandatory: true },
+    { key: "PRODUCTNAME", title: "PRODUCT NAME", mandatory: true },
+    { key: "GSM", title: "GSM", mandatory: true },
+    { key: "SIZE", title: "SIZE", mandatory: true },
+    { key: "WEIGHT", title: "WEIGHT", mandatory: true }
 ];
 
-class ParentReelManagement extends Component {
+class ProductMaster extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -19,7 +20,7 @@ class ParentReelManagement extends Component {
     }
     createNewRow = (rowId) => {
         return new Promise((resolve, reject) => {
-            this.props.parentReelMasterService.create({ _id: rowId, LOTNO: "", PARENTRLNO: "", MFGDATE: "", WEIGHT: "" }).then(data => {
+            this.props.productMasterService.create({ _id: rowId, PRODUCTNO: "", PRODUCTNAME: "", GSM: "", SIZE: "" ,WEIGHT:""}).then(data => {
                 resolve(data);
             })
         })
@@ -28,11 +29,11 @@ class ParentReelManagement extends Component {
     saveHook = (item) => {
         console.log(item);
         return new Promise((resolve, reject) => {
-            if ( item.PARENTRLNO === "" || item.MFGDATE === "" || item.WEIGHT === "") {
+            if ( item.PRODUCTNO === "" || item.PRODUCTNAME === "" || item.GSM === ""|| item.SIZE === ""|| item.WEIGHT === "") {
                 resolve(false);
             } else {
-                this.props.parentReelMasterService.patch(item.ROWID, 
-                { "LOTNO": item.LOTNO, "PARENTRLNO": item.PARENTRLNO, "MFGDATE": item.MFGDATE, "WEIGHT": item.WEIGHT })
+                this.props.productMasterService.patch(item.ROWID, 
+                { "PRODUCTNO": item.PRODUCTNO, "PRODUCTNAME": item.PRODUCTNAME, "GSM": item.GSM, "SIZE": item.SIZE,"WEIGHT": item.WEIGHT })
                 .then(patchedItem => {
                     resolve(true);
                 })
@@ -41,7 +42,7 @@ class ParentReelManagement extends Component {
     }
 
     componentDidMount() {
-        this.props.parentReelMasterService.find().then(items => {
+        this.props.productMasterService.find().then(items => {
             this.setState({ rows: items, isLoading: false });
         })
     }
@@ -57,6 +58,6 @@ class ParentReelManagement extends Component {
     }
 }
 
-export default withDataServices(ParentReelManagement, ['parentReelMaster'], (parentReelMasterService) => ({
-    parentReelMasterService: parentReelMasterService
+export default withDataServices(ProductMaster, ['productMaster'], (productMasterService) => ({
+    productMasterService: productMasterService
 }));
