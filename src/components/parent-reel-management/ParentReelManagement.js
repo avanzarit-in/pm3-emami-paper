@@ -10,7 +10,7 @@ import DateFormatter from './../data-grid/DateFormatter';
 const columns = [
     { key: "LOTNO", title: "LOT NO", mandatory: true },
     { key: "PARENTRLNO", title: "PARENT REEL NO", mandatory: true },
-    { key: "MFGDATE", title: "REEL MFG DATE", mandatory: true, editor : DateEditor,formatter:DateFormatter },
+    { key: "MFGDATE", title: "REEL MFG DATE", mandatory: false, editor : DateEditor,formatter:DateFormatter },
     { key: "WEIGHT", title: "PARENT ROLL WT", mandatory: true }
 ];
 

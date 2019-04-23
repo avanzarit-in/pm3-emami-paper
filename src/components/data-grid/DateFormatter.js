@@ -7,17 +7,17 @@ export default class DateFormatter extends Component {
         return (
             <Form >
                 <Form.Group widths='equal'>
-                    
-                    <Form.Input fluid label='Date' placeholder='Date' >
 
-                        <Input action={<Button icon onClick={() => {
-                            this.setState({ showModal: true })
 
-                        }}>
-                            <Icon name='calendar alternate outline' />
-                        </Button>} placeholder='Date' />
 
-                    </Form.Input>
+                    <Input action={<Button icon onClick={() => {
+                        this.setState({ showModal: true })
+
+                    }}>
+                        <Icon name='calendar alternate outline' />
+                    </Button>} placeholder='Date' />
+
+
                 </Form.Group>
             </Form>
 
