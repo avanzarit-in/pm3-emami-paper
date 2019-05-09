@@ -20,4 +20,66 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>net.sf.jasperreports.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>DispatchReport1_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/DispatchReport1.jrxml</location>
+		</link>
+		<link>
+			<name>EmamiLandScapeFinalReport_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/EmamiLandScapeFinalReport.jrxml</location>
+		</link>
+		<link>
+			<name>EmamiReportDetailsView_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/EmamiReportDetailsView.jrxml</location>
+		</link>
+		<link>
+			<name>EmamiReportDetails_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/EmamiReportDetails.jrxml</location>
+		</link>
+		<link>
+			<name>EmamiReportShiftWise_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/EmamiReportShiftWise.jrxml</location>
+		</link>
+		<link>
+			<name>EmamiZebraFinal_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/EmamiZebraFinal.jrxml</location>
+		</link>
+		<link>
+			<name>PackingSlipReport_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/PackingSlipReport.jrxml</location>
+		</link>
+		<link>
+			<name>ReelStatusReport_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/ReelStatusReport.jrxml</location>
+		</link>
+		<link>
+			<name>ReelWeightRegister_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/ReelWeightRegister.jrxml</location>
+		</link>
+		<link>
+			<name>StockRegister_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/StockRegister.jrxml</location>
+		</link>
+		<link>
+			<name>Zebra - Copy.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/Zebra - Copy.jrxml</location>
+		</link>
+		<link>
+			<name>Zebra_1.jrxml</name>
+			<type>1</type>
+			<location>D:/TestProject/pm3emamipaper/EmamiPM3/Zebra.jrxml</location>
+		</link>
+	</linkedResources>
 </projectDescription>
