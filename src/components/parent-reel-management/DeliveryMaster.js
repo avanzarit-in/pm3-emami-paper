@@ -9,7 +9,7 @@ const columns = [
     { key: "COUNTRY", title: "COUNTRY", mandatory: true },
     { key: "REGION", title: "REGION", mandatory: true },
     { key: "PINCODE", title: "PIN CODE", mandatory: true },
-    { key: "ADDRESS", title: "ADDRESS", mandatory: true }
+  /*  { key: "ADDRESS", title: "ADDRESS", mandatory: true }*/
 
 ];
 
@@ -23,7 +23,7 @@ class DeliveryMaster extends Component {
     createNewRow = (rowId) => {
         return new Promise((resolve, reject) => {
 
-            this.props.deliveryMasterService.create({ _id: rowId, COUNTRY: "", REGION: "", PINCODE: "", ADDRESS: "" }).then(data => {
+            this.props.deliveryMasterService.create({ _id: rowId, COUNTRY: "", REGION: "", PINCODE: ""}).then(data => {
 
                 resolve(data);
             })
@@ -34,11 +34,11 @@ class DeliveryMaster extends Component {
         console.log(item);
         return new Promise((resolve, reject) => {
 
-            if ( item.COUNTRY === "" || item.REGION === "" || item.PINCODE === ""|| item.ADDRESS === "") {
+            if ( item.COUNTRY === "" || item.REGION === "" || item.PINCODE === "") {
                 resolve(false);
             } else {
                 this.props.deliveryMasterService.patch(item.ROWID, 
-                { "COUNTRY": item.COUNTRY, "REGION": item.REGION, "PINCODE": item.PINCODE, "ADDRESS": item.ADDRESS })
+                { "COUNTRY": item.COUNTRY, "REGION": item.REGION, "PINCODE": item.PINCODE })
 
                 .then(patchedItem => {
                     resolve(true);

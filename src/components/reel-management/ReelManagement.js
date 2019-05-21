@@ -3,7 +3,7 @@ import DataGrid from './../data-grid/DataGrid';
 import DataGridToolBar from './DataGridToolBar';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import withDataServices from './../hoc/withDataServices';
-
+import { Editors } from "react-data-grid-addons";
 /**const columns = [
     { key: "SLN", editable: false, headerRenderer: () => <div className="header-wrapper">SLN</div> },
     { key: "REELNO", editable: true, headerRenderer: () => <div className="header-wrapper">REEL NO</div> },
@@ -18,11 +18,18 @@ import withDataServices from './../hoc/withDataServices';
     { key: "LENGTH", editable: true, headerRenderer: () => <div className="header-wrapper">LENGTH</div> }
 ];
 **/
+const { DropDownEditor } = Editors;
+const itemCodes = [
+  { id: "item1", value: "Item1" },
+  { id: "item2", value: "Item2" },
+  { id: "item3", value: "Item3" }
+];
+const ItemCodesEditor = <DropDownEditor options={itemCodes} />;
 
 const columns = [
     { key: "SLN", title: "SLN", mandatory: false,readOnly:true },
     { key: "REELNO", title: "REEL NO", mandatory: true  },
-    { key: "ITEMCODE", title: "ITEM CODE", mandatory: true },
+    { key: "ITEMCODE", title: "ITEM CODE", mandatory: true, editor : ItemCodesEditor },
     { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle: ()=>{return(<div className="grouped-column" >&nbsp;</div>)} },
     { key: "JNT", title: "JNT", mandatory: true,groupTitle:()=>{return(<div className="grouped-column" >REEL/REAM</div>)} },
     { key: "BUNDLE", title: "BUNDLE", mandatory: true,groupTitle:()=>{return(<div className="grouped-column" >&nbsp;</div>)} },
