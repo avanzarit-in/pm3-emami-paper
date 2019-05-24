@@ -11,7 +11,7 @@ import { CLIENT_RENEG_LIMIT } from 'tls';
 const columns = [
     { key: "LOTNO", title: "LOT NO", mandatory: true },
     { key: "PARENTRLNO", title: "PARENT REEL NO", mandatory: true },
-    { key: "MFGDATE", title: "REEL MFG DATE", mandatory: false, formatter: DateFormatter },
+    { key: "MFGDATE", title: "REEL MFG DATE", mandatory: false, formatter:DateFormatter },
     { key: "WEIGHT", title: "PARENT ROLL WT", mandatory: true }
 ];
 

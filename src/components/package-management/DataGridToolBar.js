@@ -5,7 +5,7 @@ import MonthCalendar from '../calendar/monthCalendar/MonthCalendar';
 export default class DataGridToolBar extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {date : moment().format("YYYY/MM/DD")};
         this.state.showModal = false;
 
     }
@@ -14,6 +14,9 @@ export default class DataGridToolBar extends Component {
     }
     setDate = (e, date) => {
         console.log("date String =>" + date.format("YYYY/MM/DD"));
+        this.setState({
+            date : date.format("YYYY/MM/DD")
+            });
         this.close();
     }
     render() {
@@ -31,7 +34,7 @@ export default class DataGridToolBar extends Component {
 
                                     }}>
                                         <Icon name='calendar alternate outline' />
-                                    </Button>} placeholder='Date' />
+                                    </Button>} placeholder='Date' value ={this.state.date}/>
 
                                 </Form.Input>
                                 <Form.Input fluid label='Challan No.' placeholder='Last name' />
@@ -42,7 +45,7 @@ export default class DataGridToolBar extends Component {
 
                                     }}>
                                         <Icon name='calendar alternate outline' />
-                                    </Button>} placeholder='Date' />
+                                    </Button>} placeholder='Date' value ={this.state.date}/>
 
                                 </Form.Input>
                                 <Form.Input fluid label='Truck No.' placeholder='Last name' />

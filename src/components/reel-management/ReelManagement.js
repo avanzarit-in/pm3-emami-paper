@@ -4,6 +4,7 @@ import DataGridToolBar from './DataGridToolBar';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import withDataServices from './../hoc/withDataServices';
 import { Editors } from "react-data-grid-addons";
+import DateFormatter from './DateFormatter';
 /**const columns = [
     { key: "SLN", editable: false, headerRenderer: () => <div className="header-wrapper">SLN</div> },
     { key: "REELNO", editable: true, headerRenderer: () => <div className="header-wrapper">REEL NO</div> },
@@ -36,7 +37,7 @@ const columns = [
     { key: "SFT", title: "SFT", mandatory: true },
     { key: "QLYMRK", title: "QLY MRK", mandatory: true },
     { key: "PARENTRELNO", title: "PARENT", mandatory: true},
-    { key: "WEIGHTDATE", title: "WEIGHTMENT", mandatory: true },
+    { key: "WEIGHTDATE", title: "WEIGHTMENT", mandatory: true,formatter : DateFormatter },
     { key: "LENGTH", title: "LENGTH", mandatory: true }
 ];
 
