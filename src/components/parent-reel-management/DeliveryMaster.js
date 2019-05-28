@@ -8,7 +8,7 @@ const columns = [
     { key: "CONSIGNEEID", title: "CONSIGNEE ID", mandatory: false,readOnly:true },
     { key: "COUNTRY", title: "COUNTRY", mandatory: true },
     { key: "REGION", title: "REGION", mandatory: true },
-    { key: "PINCODE", title: "PIN CODE", mandatory: true },
+    { key: "PINCODE", title: "PIN CODE", mandatory: true }
   /*  { key: "ADDRESS", title: "ADDRESS", mandatory: true }*/
 
 ];

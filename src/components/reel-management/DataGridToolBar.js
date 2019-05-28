@@ -5,8 +5,13 @@ import { Modal,Button,Icon } from 'semantic-ui-react';
 export default class DataGridToolBar extends Component {
 
 state={fromDate:moment(),
-toDate:moment()}
+toDate:moment(),
+date : moment()}
     dateSelected = (fromDate, toDate) => {
+        this.setState({
+            fromDate:fromDate,
+            toDate: toDate
+    });
         let formattedFromDate = fromDate.format("DD.MM.YYYY");
         let formattedToDate = toDate.format("DD.MM.YYYY");
 

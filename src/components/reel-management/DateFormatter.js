@@ -27,7 +27,7 @@ export default class DateFormatter extends Component {
                                
                                 
 
-                                    <Input size='mini' action={<Button icon onClick={() => {
+                                    <Input size='small' action={<Button icon onClick={() => {
                                         this.setState({ showModal: true })
 
                                     }}>

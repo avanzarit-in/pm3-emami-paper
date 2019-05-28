@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import moment from 'moment'
-import { Form, Grid, Input, Button, Icon, Modal } from 'semantic-ui-react';
+import { Form, Grid, Input, Button, Icon, Modal,Dropdown} from 'semantic-ui-react';
 import MonthCalendar from '../calendar/monthCalendar/MonthCalendar';
+
+
+const options = [
+    { key: 1, text: 'CosigneeName1', value: 1 },
+    { key: 2, text: 'CosigneeName2', value: 2 },
+    { key: 3, text: 'CosigneeName3', value: 3 },
+  ];
 export default class DataGridToolBar extends Component {
     constructor(props) {
         super(props);
@@ -38,7 +45,7 @@ export default class DataGridToolBar extends Component {
 
                                 </Form.Input>
                                 <Form.Input fluid label='Challan No.' placeholder='Last name' />
-                                <Form.Input fluid label='Date' placeholder='Date' >
+                                {/*<Form.Input fluid label='Date' placeholder='Date' >
 
                                     <Input action={<Button icon onClick={() => {
                                         this.setState({ showModal: true })
@@ -47,27 +54,18 @@ export default class DataGridToolBar extends Component {
                                         <Icon name='calendar alternate outline' />
                                     </Button>} placeholder='Date' value ={this.state.date}/>
 
-                                </Form.Input>
+                                </Form.Input>*/}
                                 <Form.Input fluid label='Truck No.' placeholder='Last name' />
-
-                            </Form.Group>
-                        </Form>
-
-
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row style={{padding:'0px'}}>
-                    <Grid.Column>
-                        <Form >
-                            <Form.Group >
-                                <Form.Input fluid label='Consignee Name' placeholder='Consignee Name' width={6}/>
+                                <Form.Input fluid label='Consignee Name'><Dropdown  placeholder='Consignee Name  '   options={options} selection /></Form.Input>
                                
+
                             </Form.Group>
                         </Form>
 
 
                     </Grid.Column>
                 </Grid.Row>
+               
                 <Modal open={this.state.showModal} size='tiny' closeOnEscape={true}
                     closeOnDimmerClick={true} centered={false} onClose={this.close}>
                     <Modal.Header>Select Date</Modal.Header>

@@ -5,6 +5,7 @@ import { Dimmer, Loader } from 'semantic-ui-react';
 import withDataServices from './../hoc/withDataServices';
 
 
+
 const columns = [
     { key: "SLN", title: "SLN", mandatory: false,readOnly:true },
     { key: "LOTNO", title: "LOT NO", mandatory: true  },

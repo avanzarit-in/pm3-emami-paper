@@ -130,12 +130,12 @@ FROM "ORDERS"]]>
 		<band splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="104" splitType="Stretch">
+		<band height="43" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="-4" width="1150" height="104" uuid="fe2f76c4-8d38-4f00-a126-296d2a4e42e4"/>
+				<reportElement x="0" y="-4" width="1150" height="44" uuid="fe2f76c4-8d38-4f00-a126-296d2a4e42e4"/>
 			</rectangle>
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="-4" width="90" height="104" backcolor="#FFCFCF" uuid="786cdfa2-4a65-4037-ac19-1a25d550de90">
+				<reportElement mode="Opaque" x="0" y="-4" width="90" height="44" backcolor="#FFCFCF" uuid="786cdfa2-4a65-4037-ac19-1a25d550de90">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="722e5f9e-8ff1-4948-b78c-67273159b482"/>
 				</reportElement>
 				<box>
@@ -147,7 +147,7 @@ FROM "ORDERS"]]>
 				<text><![CDATA[QUALITY CODE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="233" y="-4" width="55" height="104" backcolor="#FFCFCF" uuid="b0549c7a-1a0b-44d2-b9fa-49393f5003f5">
+				<reportElement mode="Opaque" x="233" y="-4" width="55" height="44" backcolor="#FFCFCF" uuid="b0549c7a-1a0b-44d2-b9fa-49393f5003f5">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb2a224b-a159-48ac-a0a4-befe48a9a8e9"/>
 				</reportElement>
 				<box>
@@ -159,7 +159,7 @@ FROM "ORDERS"]]>
 				<text><![CDATA[GSM]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="288" y="-4" width="72" height="104" backcolor="#FFCFCF" uuid="716614db-8de3-4de6-8f9b-e94d6be8aca2">
+				<reportElement mode="Opaque" x="288" y="-4" width="72" height="44" backcolor="#FFCFCF" uuid="716614db-8de3-4de6-8f9b-e94d6be8aca2">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="58bdce09-33ab-4f0a-8233-35fafb5382a9"/>
 				</reportElement>
 				<box>
@@ -172,7 +172,7 @@ FROM "ORDERS"]]>
 CMS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="90" y="-4" width="143" height="104" backcolor="#FFCFCF" uuid="f76efff7-192a-4a08-8295-4a6e79a59266">
+				<reportElement mode="Opaque" x="90" y="-4" width="143" height="44" backcolor="#FFCFCF" uuid="f76efff7-192a-4a08-8295-4a6e79a59266">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a36056b3-77b4-4c78-a2bf-d1273070b9a1"/>
 				</reportElement>
 				<box>
@@ -184,7 +184,7 @@ CMS]]></text>
 				<text><![CDATA[QUALITY NAME]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="700" y="-4" width="70" height="104" backcolor="#FFCFCF" uuid="bfe05a10-2e7d-4ab4-8abc-7ce7db87f811">
+				<reportElement mode="Opaque" x="700" y="-4" width="70" height="44" backcolor="#FFCFCF" uuid="bfe05a10-2e7d-4ab4-8abc-7ce7db87f811">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb2a224b-a159-48ac-a0a4-befe48a9a8e9"/>
 				</reportElement>
 				<box>
@@ -196,7 +196,7 @@ CMS]]></text>
 				<text><![CDATA[LOT NO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="860" y="-4" width="60" height="104" backcolor="#FFCFCF" uuid="89848c41-06ec-4ee3-b196-885842459b5b">
+				<reportElement mode="Opaque" x="860" y="-4" width="60" height="44" backcolor="#FFCFCF" uuid="89848c41-06ec-4ee3-b196-885842459b5b">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -208,7 +208,7 @@ CMS]]></text>
 				<text><![CDATA[SFT ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="770" y="-4" width="90" height="104" backcolor="#FFCFCF" uuid="9bcb852b-5785-4c66-bef6-b8bbe5e5263a">
+				<reportElement mode="Opaque" x="770" y="-4" width="90" height="44" backcolor="#FFCFCF" uuid="9bcb852b-5785-4c66-bef6-b8bbe5e5263a">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="58bdce09-33ab-4f0a-8233-35fafb5382a9"/>
 				</reportElement>
 				<box>
@@ -220,7 +220,7 @@ CMS]]></text>
 				<text><![CDATA[PARENT ROLL]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1080" y="-4" width="70" height="104" backcolor="#FFCFCF" uuid="801f995b-e822-44ab-909d-bbbb9047087b">
+				<reportElement mode="Opaque" x="1080" y="-4" width="70" height="44" backcolor="#FFCFCF" uuid="801f995b-e822-44ab-909d-bbbb9047087b">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -232,7 +232,7 @@ CMS]]></text>
 				<text><![CDATA[REMARKS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="360" y="-4" width="70" height="104" backcolor="#FFCFCF" uuid="49e3fc4a-abaa-42e4-a344-a9a54285d512">
+				<reportElement mode="Opaque" x="360" y="-4" width="70" height="44" backcolor="#FFCFCF" uuid="49e3fc4a-abaa-42e4-a344-a9a54285d512">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -244,7 +244,7 @@ CMS]]></text>
 				<text><![CDATA[QUALITY OF PRODUCT]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="991" y="-4" width="89" height="104" backcolor="#FFCFCF" uuid="b6ca078f-3141-419d-b54c-01e603ad0d4e">
+				<reportElement mode="Opaque" x="991" y="-4" width="89" height="44" backcolor="#FFCFCF" uuid="b6ca078f-3141-419d-b54c-01e603ad0d4e">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -256,7 +256,7 @@ CMS]]></text>
 				<text><![CDATA[WEIGHT PER REEL]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="920" y="-4" width="71" height="104" backcolor="#FFCFCF" uuid="6f6c01d3-4b3d-4978-9059-ff3a3f0ac99b">
+				<reportElement mode="Opaque" x="920" y="-4" width="71" height="44" backcolor="#FFCFCF" uuid="6f6c01d3-4b3d-4978-9059-ff3a3f0ac99b">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -268,7 +268,7 @@ CMS]]></text>
 				<text><![CDATA[JOINT]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="632" y="-4" width="68" height="104" backcolor="#FFCFCF" uuid="d8ef0c74-d694-4de2-8e28-3b05b42fa439">
+				<reportElement mode="Opaque" x="632" y="-4" width="68" height="44" backcolor="#FFCFCF" uuid="d8ef0c74-d694-4de2-8e28-3b05b42fa439">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -280,7 +280,7 @@ CMS]]></text>
 				<text><![CDATA[REEL NO]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="523" y="-4" width="109" height="104" backcolor="#FFCFCF" uuid="9f5dc558-19ec-4b74-8875-e240d95cec7d">
+				<reportElement mode="Opaque" x="523" y="-4" width="109" height="44" backcolor="#FFCFCF" uuid="9f5dc558-19ec-4b74-8875-e240d95cec7d">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -292,7 +292,7 @@ CMS]]></text>
 				<text><![CDATA[PRODUCTION DATE]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="430" y="-4" width="93" height="104" backcolor="#FFCFCF" uuid="eea80bc6-c044-4dcf-89fa-3660d8dfd413">
+				<reportElement mode="Opaque" x="430" y="-4" width="93" height="44" backcolor="#FFCFCF" uuid="eea80bc6-c044-4dcf-89fa-3660d8dfd413">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -306,12 +306,12 @@ CMS]]></text>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="62" splitType="Stretch">
+		<band height="30" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="-4" width="1150" height="66" uuid="057af94f-9c86-4ee0-ae61-012e1ee75df6"/>
+				<reportElement x="0" y="-4" width="1150" height="34" uuid="057af94f-9c86-4ee0-ae61-012e1ee75df6"/>
 			</rectangle>
 			<textField>
-				<reportElement x="1080" y="-4" width="70" height="66" uuid="43f31986-62f0-44bd-afdc-80c87c588263">
+				<reportElement x="1080" y="-4" width="70" height="34" uuid="43f31986-62f0-44bd-afdc-80c87c588263">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4ae6fa5c-5b98-495f-baac-7ff98598cd03"/>
 				</reportElement>
 				<box>
@@ -321,7 +321,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{CUSTOMERID}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="90" y="-4" width="143" height="66" uuid="6a9730a5-0ee3-422c-89c8-815dbf0f1d54">
+				<reportElement x="90" y="-4" width="143" height="34" uuid="6a9730a5-0ee3-422c-89c8-815dbf0f1d54">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="722e5f9e-8ff1-4948-b78c-67273159b482"/>
 				</reportElement>
 				<box>
@@ -331,7 +331,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{SHIPNAME}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="-4" width="90" height="66" uuid="5890d00a-50da-4812-8b89-4b5542be9b83">
+				<reportElement x="0" y="-4" width="90" height="34" uuid="5890d00a-50da-4812-8b89-4b5542be9b83">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a36056b3-77b4-4c78-a2bf-d1273070b9a1"/>
 				</reportElement>
 				<box>
@@ -341,7 +341,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{EMPLOYEEID}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="233" y="-4" width="55" height="66" uuid="2c76d820-9535-4d6b-86ac-c2b45a3d0c14">
+				<reportElement x="233" y="-4" width="55" height="34" uuid="2c76d820-9535-4d6b-86ac-c2b45a3d0c14">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="58bdce09-33ab-4f0a-8233-35fafb5382a9"/>
 				</reportElement>
 				<box>
@@ -351,7 +351,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{ORDERID}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="288" y="-4" width="72" height="66" uuid="30468807-6628-4a9c-9dda-60cd467f805e">
+				<reportElement x="288" y="-4" width="72" height="34" uuid="30468807-6628-4a9c-9dda-60cd467f805e">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebcef177-d568-43d9-9b8b-69e9959bd694"/>
 				</reportElement>
 				<box>
@@ -361,7 +361,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{SHIPPOSTALCODE}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="700" y="-4" width="70" height="66" uuid="ce90b7c1-36d0-4d54-8c52-8f72dedcacab">
+				<reportElement x="700" y="-4" width="70" height="34" uuid="ce90b7c1-36d0-4d54-8c52-8f72dedcacab">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c59e0b4f-48f6-4a86-bbea-7035cedeb832"/>
 				</reportElement>
 				<box>
@@ -371,7 +371,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{EMPLOYEEID}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="632" y="-4" width="68" height="66" uuid="3ae99101-ea3c-48e7-b560-12426fef26b2">
+				<reportElement x="632" y="-4" width="68" height="34" uuid="3ae99101-ea3c-48e7-b560-12426fef26b2">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c59e0b4f-48f6-4a86-bbea-7035cedeb832"/>
 				</reportElement>
 				<box>
@@ -381,7 +381,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{EMPLOYEEID}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="991" y="-4" width="89" height="66" uuid="71d88835-7735-428b-8e95-eb1f46c0b6ee">
+				<reportElement x="991" y="-4" width="89" height="34" uuid="71d88835-7735-428b-8e95-eb1f46c0b6ee">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c59e0b4f-48f6-4a86-bbea-7035cedeb832"/>
 				</reportElement>
 				<box>
@@ -391,7 +391,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{EMPLOYEEID}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="430" y="-4" width="93" height="66" uuid="4d99c822-5296-4328-9a12-d411a2efdcad">
+				<reportElement x="430" y="-4" width="93" height="34" uuid="4d99c822-5296-4328-9a12-d411a2efdcad">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="304c7bb6-49e3-4548-a613-08ed51c7282e"/>
 				</reportElement>
 				<box>
@@ -401,7 +401,7 @@ CMS]]></text>
 				<textFieldExpression><![CDATA[$F{ORDERDATE}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="523" y="-4" width="109" height="66" uuid="9641f6b7-a3be-4908-b3f5-d6a6275d3e04">
+				<reportElement x="523" y="-4" width="109" height="34" uuid="9641f6b7-a3be-4908-b3f5-d6a6275d3e04">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="304c7bb6-49e3-4548-a613-08ed51c7282e"/>
 				</reportElement>
 				<box>
