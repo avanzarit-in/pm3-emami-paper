@@ -5,6 +5,8 @@ import { Dimmer, Loader } from 'semantic-ui-react';
 import DateEditor from './../data-grid/DateEditor';
 import DateFormatter from './../data-grid/DateFormatter';
 import { CLIENT_RENEG_LIMIT } from 'tls';
+import { Margin } from 'devextreme-react/chart';
+
 
 
 

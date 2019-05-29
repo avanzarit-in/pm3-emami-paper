@@ -21,23 +21,23 @@ import DateFormatter from './DateFormatter';
 **/
 const { DropDownEditor } = Editors;
 const itemCodes = [
-  { id: "item1", value: "Item1" },
-  { id: "item2", value: "Item2" },
-  { id: "item3", value: "Item3" }
+  { id: "item1", value: "ItemCode0001" },
+  { id: "item2", value: "ItemCode0002" },
+  { id: "item3", value: "ItemCode0003" }
 ];
 const ItemCodesEditor = <DropDownEditor options={itemCodes} />;
 
 const columns = [
-    { key: "SLN", title: "SLN", mandatory: false,readOnly:true },
+    { key: "SLN", title: "SLN", mandatory: false,readOnly:true,},
     { key: "REELNO", title: "REEL NO", mandatory: true  },
     { key: "ITEMCODE", title: "ITEM CODE", mandatory: true, editor : ItemCodesEditor },
     { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle: ()=>{return(<div className="grouped-column" >&nbsp;</div>)} },
-    { key: "JNT", title: "JNT", mandatory: true,groupTitle:()=>{return(<div className="grouped-column" >REEL/REAM</div>)} },
+    { key: "JNT", title: "JNT", mandatory: true, groupTitle:()=>{return(<div className="grouped-column" >REEL/REAM</div>)} },
     { key: "BUNDLE", title: "BUNDLE", mandatory: true,groupTitle:()=>{return(<div className="grouped-column" >&nbsp;</div>)} },
     { key: "SFT", title: "SFT", mandatory: true },
     { key: "QLYMRK", title: "QLY MRK", mandatory: true },
     { key: "PARENTRELNO", title: "PARENT", mandatory: true},
-    { key: "WEIGHTDATE", title: "WEIGHTMENT", mandatory: true,formatter : DateFormatter },
+    { key: "WEIGHTDATE", title: "WEIGHTDATE", mandatory: true,formatter : DateFormatter },
     { key: "LENGTH", title: "LENGTH", mandatory: true }
 ];
 

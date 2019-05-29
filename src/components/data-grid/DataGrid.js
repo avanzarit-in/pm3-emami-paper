@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import ReactDataGrid from 'react-data-grid';
 import $ from 'jquery'
 import { toast } from 'react-semantic-toasts';
+import { Margin } from 'devextreme-react/bar-gauge';
+
+
 export default class DataGrid extends Component {
     constructor(props) {
         super(props);
@@ -216,6 +219,7 @@ export default class DataGrid extends Component {
     render() {
         return (
             <ReactDataGrid
+                
                 columns={this.state.columns}
                 rowGetter={this.rowGetter}
                 rowsCount={this.state.totalRows}

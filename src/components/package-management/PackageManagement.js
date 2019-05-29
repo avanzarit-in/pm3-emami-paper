@@ -9,8 +9,8 @@ import withDataServices from './../hoc/withDataServices';
 const columns = [
     { key: "SLN", title: "SLN", mandatory: false,readOnly:true },
     { key: "LOTNO", title: "LOT NO", mandatory: true  },
-    { key: "REELNO", title: "REEL NO", mandatory: true,groupTitle: ()=>{return(<div  className="grouped-column" >&nbsp;</div>)} },
-    { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle: ()=>{return(<div style={{marginLeft:'-170px'}} className="grouped-column" >REAL/RIM</div>)} },
+    { key: "REELNO", title: "REEL NO", mandatory: true,groupTitle: ()=>{return(<div  style={{textAlign:"right"}} className="grouped-column" >REEL/</div>)} },
+    { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle: ()=>{return(<div style={{textAlign:"left"}} className="grouped-column" >REAM</div>)} },
     { key: "QLTMRK", title: "QLT MRK", mandatory: true},
     { key: "ITEMCODE", title: "ITEM CODE", mandatory: true},
     { key: "ITEMNAME", title: "ITEM NAME", mandatory: true },

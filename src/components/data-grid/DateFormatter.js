@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import moment from 'moment'
 import { Input, Button, Icon, Modal } from 'semantic-ui-react';
 import MonthCalendar from '../calendar/monthCalendar/MonthCalendar';
+import { Border } from 'devextreme-react/sankey';
 export default class DateFormatter extends Component {
     constructor(props) {
         super(props);
@@ -22,7 +23,7 @@ export default class DateFormatter extends Component {
     render() {
         return (
             <div>
-                <Input action={<Button icon onClick={() => {
+                <Input transparent fluid size = "small" action={<Button icon onClick={() => {
                     this.setState({ showModal: true })
 
                 }}>
