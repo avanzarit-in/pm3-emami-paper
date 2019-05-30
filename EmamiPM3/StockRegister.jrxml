@@ -144,7 +144,7 @@ FROM "ORDERS"]]>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[QUALITY CODE]]></text>
+				<text><![CDATA[PRODUCT CODE]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="233" y="-4" width="55" height="44" backcolor="#FFCFCF" uuid="b0549c7a-1a0b-44d2-b9fa-49393f5003f5">
@@ -181,7 +181,7 @@ CMS]]></text>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[QUALITY NAME]]></text>
+				<text><![CDATA[PRODUCT NAME]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="700" y="-4" width="70" height="44" backcolor="#FFCFCF" uuid="bfe05a10-2e7d-4ab4-8abc-7ce7db87f811">

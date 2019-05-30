@@ -7,6 +7,7 @@ encoding/EmamiReportShiftWise.jrxml=UTF-8
 encoding/EmamiReportShiftWise_1.jrxml=UTF-8
 encoding/EmamiZebraFinal_1.jrxml=UTF-8
 encoding/PackingSlipReport_1.jrxml=UTF-8
+encoding/ReelStatusReport_1.jrxml=UTF-8
 encoding/ReelWeightRegister.jrxml=UTF-8
 encoding/ReelWeightRegister_1.jrxml=UTF-8
 encoding/StockRegister.jrxml=UTF-8

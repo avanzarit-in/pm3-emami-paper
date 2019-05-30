@@ -6,7 +6,7 @@ import { Border } from 'devextreme-react/sankey';
 export default class DateFormatter extends Component {
     constructor(props) {
         super(props);
-        this.state = { date: moment().format("YYYY/MM/DD") };
+        this.state = { date: moment().format("DD/MM/YYYY") };
         this.state.showModal = false;
 
     }
@@ -14,9 +14,9 @@ export default class DateFormatter extends Component {
         this.setState({ showModal: false })
     }
     setDate = (e, date) => {
-        console.log("date String =>" + date.format("YYYY/MM/DD"));
+        console.log("date String =>" + date.format("DD/MM/YYYY"));
         this.setState({
-            date: date.format("YYYY/MM/DD")
+            date: date.format("DD/MM/YYYY")
         });
         this.close();
     }
@@ -27,7 +27,7 @@ export default class DateFormatter extends Component {
                     this.setState({ showModal: true })
 
                 }}>
-                    <Icon name='calendar alternate outline' />
+                    <Icon  name='calendar alternate outline' />
                 </Button>} placeholder='Date' value={this.state.date} />
                 <Modal open={this.state.showModal} size='tiny' closeOnEscape={true}
                     closeOnDimmerClick={true} centered={false} onClose={this.close}>

@@ -12,7 +12,7 @@ const options = [
 export default class DataGridToolBar extends Component {
     constructor(props) {
         super(props);
-        this.state = {date : moment().format("YYYY/MM/DD")};
+        this.state = {date : moment().format("DD/MM/YYYY")};
         this.state.showModal = false;
 
     }
@@ -20,9 +20,9 @@ export default class DataGridToolBar extends Component {
         this.setState({ showModal: false })
     }
     setDate = (e, date) => {
-        console.log("date String =>" + date.format("YYYY/MM/DD"));
+        console.log("date String =>" + date.format("DD/MM/YYYY"));
         this.setState({
-            date : date.format("YYYY/MM/DD")
+            date : date.format("DD/MM/YYYY")
             });
         this.close();
     }

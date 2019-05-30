@@ -3,15 +3,22 @@ import DataGrid from './../data-grid/DataGrid';
 import DataGridToolBar from './DataGridToolBar';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import withDataServices from './../hoc/withDataServices';
+import { Editors} from "react-data-grid-addons";
+const { DropDownEditor } = Editors;
 
 
-
+const qualityMark = [
+    { id: "qty1", value: "A" },
+    { id: "aty2", value: "B" },
+    { id: "qty3", value: "C" }
+  ];
+  const QualityMarkEditor = <DropDownEditor options={qualityMark} />;
 const columns = [
     { key: "SLN", title: "SLN", mandatory: false,readOnly:true },
     { key: "LOTNO", title: "LOT NO", mandatory: true  },
     { key: "REELNO", title: "REEL NO", mandatory: true,groupTitle: ()=>{return(<div  style={{textAlign:"right"}} className="grouped-column" >REEL/</div>)} },
     { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle: ()=>{return(<div style={{textAlign:"left"}} className="grouped-column" >REAM</div>)} },
-    { key: "QLTMRK", title: "QLT MRK", mandatory: true},
+    { key: "QLTMRK", title: "QLT MRK", mandatory: true,editor : QualityMarkEditor},
     { key: "ITEMCODE", title: "ITEM CODE", mandatory: true},
     { key: "ITEMNAME", title: "ITEM NAME", mandatory: true },
     { key: "GSM", title: "GSM", mandatory: true },

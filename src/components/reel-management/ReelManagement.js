@@ -3,7 +3,7 @@ import DataGrid from './../data-grid/DataGrid';
 import DataGridToolBar from './DataGridToolBar';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import withDataServices from './../hoc/withDataServices';
-import { Editors } from "react-data-grid-addons";
+import { Editors,Formatters } from "react-data-grid-addons";
 import DateFormatter from './DateFormatter';
 /**const columns = [
     { key: "SLN", editable: false, headerRenderer: () => <div className="header-wrapper">SLN</div> },
@@ -20,12 +20,20 @@ import DateFormatter from './DateFormatter';
 ];
 **/
 const { DropDownEditor } = Editors;
+
 const itemCodes = [
   { id: "item1", value: "ItemCode0001" },
   { id: "item2", value: "ItemCode0002" },
   { id: "item3", value: "ItemCode0003" }
 ];
+const qualityMark = [
+    { id: "qty1", value: "A" },
+    { id: "aty2", value: "B" },
+    { id: "qty3", value: "C" }
+  ];
 const ItemCodesEditor = <DropDownEditor options={itemCodes} />;
+const QualityMarkEditor = <DropDownEditor options={qualityMark} />;
+
 
 const columns = [
     { key: "SLN", title: "SLN", mandatory: false,readOnly:true,},
@@ -35,8 +43,8 @@ const columns = [
     { key: "JNT", title: "JNT", mandatory: true, groupTitle:()=>{return(<div className="grouped-column" >REEL/REAM</div>)} },
     { key: "BUNDLE", title: "BUNDLE", mandatory: true,groupTitle:()=>{return(<div className="grouped-column" >&nbsp;</div>)} },
     { key: "SFT", title: "SFT", mandatory: true },
-    { key: "QLYMRK", title: "QLY MRK", mandatory: true },
-    { key: "PARENTRELNO", title: "PARENT", mandatory: true},
+    { key: "QLYMRK", title: "QLT MRK", mandatory: true,editor : QualityMarkEditor },
+    { key: "PARENTRELNO", title: "PARENT REEL", mandatory: true},
     { key: "WEIGHTDATE", title: "WEIGHTDATE", mandatory: true,formatter : DateFormatter },
     { key: "LENGTH", title: "LENGTH", mandatory: true }
 ];
