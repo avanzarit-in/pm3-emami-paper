@@ -15,7 +15,7 @@ const qualityMark = [
   const QualityMarkEditor = <DropDownEditor options={qualityMark} />;
 const columns = [
     { key: "SLN", title: "SLN", mandatory: false,readOnly:true },
-    { key: "LOTNO", title: "LOT NO", mandatory: true  },
+    { key: "LOTNO", title: "LOT NO", mandatory: true ,filterRenderer:true },
     { key: "REELNO", title: "REEL NO", mandatory: true,groupTitle: ()=>{return(<div  style={{textAlign:"right"}} className="grouped-column" >REEL/</div>)} },
     { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle: ()=>{return(<div style={{textAlign:"left"}} className="grouped-column" >REAM</div>)} },
     { key: "QLTMRK", title: "QLT MRK", mandatory: true,editor : QualityMarkEditor},

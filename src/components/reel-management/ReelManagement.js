@@ -27,9 +27,9 @@ const itemCodes = [
   { id: "item3", value: "ItemCode0003" }
 ];
 const qualityMark = [
-    { id: "qty1", value: "A" },
-    { id: "aty2", value: "B" },
-    { id: "qty3", value: "C" }
+    { id: "qty1", name: "OK", value: "A" },
+    { id: "aty2", name: "Crease", value: "B" },
+    { id: "qty3", name:"Others", value: "C" }
   ];
 const ItemCodesEditor = <DropDownEditor options={itemCodes} />;
 const QualityMarkEditor = <DropDownEditor options={qualityMark} />;
@@ -37,7 +37,7 @@ const QualityMarkEditor = <DropDownEditor options={qualityMark} />;
 
 const columns = [
     { key: "SLN", title: "SLN", mandatory: false,readOnly:true,},
-    { key: "REELNO", title: "REEL NO", mandatory: true  },
+    { key: "REELNO", title: "REEL NO", mandatory: true},
     { key: "ITEMCODE", title: "ITEM CODE", mandatory: true, editor : ItemCodesEditor },
     { key: "WEIGHT", title: "WEIGHT(KG)", mandatory: true,groupTitle: ()=>{return(<div className="grouped-column" >&nbsp;</div>)} },
     { key: "JNT", title: "JNT", mandatory: true, groupTitle:()=>{return(<div className="grouped-column" >REEL/REAM</div>)} },
@@ -58,6 +58,7 @@ class ReelManagement extends Component {
         this.state.isLoading = true;
     }
     createNewRow = (rowId) => {
+
         return new Promise((resolve, reject) => {
             this.props.reelMasterService.create({_id: rowId,"SLN":rowId, "REELNO":"","ITEMCODE":"", "WEIGHT":"","JNT":"", "BUNDLE":"", "SFT":"", "QLYMRK":"", "PARENTRELNO":"","WEIGHTDATE":"","LENGTH":""}).then(data => {
                 resolve(data);
@@ -82,11 +83,14 @@ class ReelManagement extends Component {
     }
 
     componentDidMount() {
+       
         this.props.reelMasterService.find().then(items => {
+           
             this.setState({ rows: items, isLoading: false });
+            
         })
     }
-
+  
     render() {
         return (
             !this.state.isLoading ? 

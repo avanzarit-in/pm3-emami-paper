@@ -74,6 +74,7 @@ export default class DataGrid extends Component {
                     let cells = $(eachRow).find('.react-grid-Cell');
                     cells.toArray().forEach((cell, index) => {
                         console.log(Object.values(this.state.rows[rowIndex])[index + 1]);
+                        
                         if (this.state.mandatoryColumns.indexOf(index) >= 0 && Object.values(this.state.rows[rowIndex])[index + 1] === "") {
                             $(cell).css('background-color', '#ffb2b2');
                         } else {
@@ -100,7 +101,7 @@ export default class DataGrid extends Component {
             if(column.readOnly!==undefined && column.readOnly){
                 notEditableColumns.push(index);
             }
-            return { key: column.key,editor:column.editor,formatter:column.formatter, editable: (data) => this.isEditable(data), headerRenderer: () => <div className="header-wrapper">{column.groupTitle!==undefined?column.groupTitle():null}{column.title}{column.mandatory ? <span style={{ color: 'red' }}>*</span> : ""}</div> }
+            return { key: column.key,filterable:column.filterable,filterRenderer:column.filterRenderer,editor:column.editor,formatter:column.formatter, editable: (data) => this.isEditable(data), headerRenderer: () => <div className="header-wrapper">{column.groupTitle!==undefined?column.groupTitle():null}{column.title}{column.mandatory ? <span style={{ color: 'red' }}>*</span> : ""}</div> }
         });
 
         if (this.props.rows.length === 0) {
