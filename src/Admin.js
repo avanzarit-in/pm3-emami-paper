@@ -13,7 +13,7 @@ const trigger = (userName) => (
 )
 
 class Admin extends Component {
-state = { activeItem:'rp'}
+state = { activeItem:'dm'}
 
 handleItemClick = (name) =>{
 this.setState({activeItem:name})

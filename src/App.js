@@ -6,7 +6,7 @@ import ParentReelManagement from './components/parent-reel-management/ParentReel
 
 
 import Admin from './Admin'
-
+import Reports from './Reports';
 import DeliveryMaster from './components/parent-reel-management/DeliveryMaster'
 import ProductMaster from './components/parent-reel-management/ProductMaster'
 import PackageManagement from './components/package-management/PackageManagement'
@@ -85,7 +85,7 @@ this.setState({activeItem:name})
        
         <ReelManagement  />:this.state.activeItem==="ps"?
         <PackageManagement/>:this.state.activeItem==="report"?
-        <div>REPORT</div>:this.state.activeItem==="admin"?
+        <Reports/>:this.state.activeItem==="admin"?
         <div><Admin /></div>:null}
            <SemanticToastContainer position="bottom-right" />
       </div>
